@@ -1,7 +1,18 @@
-# Vue 3 + Vite
+# Well Dave
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A little limerick game for movie fans. 
 
-## Recommended IDE Setup
+## Report an issue
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+1) See if the issue is already reported [here](https://github.com/dancameron/well-dave/issues).
+2) If not, report a typo/wrong info [here](https://github.com/dancameron/well-dave/issues/new?assignees=dancameron&labels=bug&template=typo-or-wrong-info-report.md&title=Limerick+for+%5BMovie+Title%5D+is+Wrong) or a bug report [here](https://github.com/dancameron/well-dave/issues/new?assignees=dancameron&labels=bug&template=bug_report.md&title=)
+
+## Support The Filmcast by:
+
+* Becoming a [patreon member](https://www.patreon.com/filmpodcast)
+* Giving a positive review and rating in your podcast directory.
+
+## Well Dave Credits
+Created by [Kevin Taylor](https://twitter.com)
+
+Designed and Developed by [Dan Cameron](https://twitter.com/dancameron) 
