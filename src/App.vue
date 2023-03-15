@@ -3,7 +3,8 @@
 import Conversation from "./components/Conversation.vue";
 import Limerick from "./components/Limerick.vue";
 import AnswerScreen from "./components/AnswerScreen.vue";
-import Stats from "./components/Stats.vue";</script>
+import Stats from "./components/Stats.vue";
+import FooterLinks from "./components/FooterLinks.vue";</script>
 
 <template>
 	<div class="font-sans" :class="{'bg-gray-900': answeredOrSkipped}">
@@ -36,18 +37,8 @@ import Stats from "./components/Stats.vue";</script>
 
 		<Stats v-else :questions="questions" :answerLog="answerLog" @continue="upSetTotal"/>
 
-		<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+		<FooterLinks :current-question-id="currentQuestionId" :v="version" @restart="restart"/>
 
-			<div class="flex items-center justify-between space-x-6 text-xs">
-				<button
-				  class="text-gray-300 bg-gray-50 hover:text-gray-800 hover:bg-brand-yellow px-2 py-1 text-left"
-				  v-on:click.prevent="restart">
-					Restart
-				</button>
-				<span class="text-gray-300 hover:text-gray-500">Version: {{ version }}</span>
-			</div>
-
-		</div>
 	</div>
 </template>
 
@@ -111,7 +102,7 @@ export default {
 			})
 		},
 		upSetTotal() {
-			this.setTotal = this.setTotal+10
+			this.setTotal = this.setTotal + 10
 			this.finished = false
 			this.setRandQuestion()
 		},
