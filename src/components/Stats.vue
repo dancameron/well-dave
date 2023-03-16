@@ -38,7 +38,7 @@
 			<dl
 			  class="mt-5 grid grid-cols-1 divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow md:grid-cols-3 md:divide-y-0 md:divide-x">
 				<div class="px-4 py-5 sm:p-6">
-					<dt class="text-base font-normal text-gray-900">Limericks Answered</dt>
+					<dt class="text-base font-normal text-gray-900">Answered Correctly</dt>
 					<dd class="mt-1 flex items-center justify-between md:block lg:flex">
 						<div class="flex items-baseline text-2xl font-semibold text-indigo-600">
 							{{ limericksAnswered }}
@@ -66,7 +66,7 @@
 				</div>
 
 				<div class="px-4 py-5 sm:p-6">
-					<dt class="text-base font-normal text-gray-900">Total Score</dt>
+					<dt class="text-base font-normal text-gray-900">Calculated Score</dt>
 					<dd class="mt-1 flex items-center justify-between md:block lg:flex">
 
 						<div
@@ -114,7 +114,7 @@
 				</div>
 
 				<div class="px-4 py-5 sm:p-6">
-					<dt class="text-base font-normal text-gray-900">Help Needed</dt>
+					<dt class="text-base font-normal text-gray-900">Hints Viewed</dt>
 					<dd class="mt-1 flex items-center justify-between md:block lg:flex">
 						<div class="flex items-baseline text-2xl font-semibold text-green-600">
 							{{ helpUsed }}
@@ -167,7 +167,9 @@ export default {
 			return this.questions.length
 		},
 		limericksAttempted() {
+			console.log('this.questions: ', this.questions)
 			return this.questions.filter(function (q) {
+				console.log('q: ', q )
 				return true === q.answered || 'skipped' === q.answered;
 			})
 		},
@@ -187,9 +189,12 @@ export default {
 		},
 		helpUsed() {
 			let needed = 0
+			console.log('help used: ', this.limericksAttempted.json)
 			this.limericksAttempted.forEach(function(q){
+				console.log('needed q: ', q)
 				needed = needed + q.hintsNeeded
 			})
+			console.log('needed: ', needed)
 			return needed
 		},
 		helpAvailable() {
@@ -219,6 +224,10 @@ export default {
 			if ( 0 === this.remainingLimericks ) {
 				bonus = this.totalLimericksAttempted*.5
 			}
+			console.log('limericksAnswered: ', this.limericksAnswered)
+			console.log('totalLimericksAttempted: ', this.totalLimericksAttempted)
+			console.log('helpUsed: ', this.helpUsed)
+			console.log('wrongAnswers: ', this.wrongAnswers)
 			return ((Math.floor((this.limericksAnswered / this.totalLimericksAttempted) * 100)) + bonus) - Math.floor(((this.helpUsed*1.5) + (this.wrongAnswers*.5)));
 		},
 		totalStars() {

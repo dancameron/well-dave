@@ -1,37 +1,45 @@
 <template>
 	<div class="relative bg-gray-900">
+		<h1 v-if="currentQuestion.answered === 'skipped'"
+		    class="-mt-12 flex items-center space-x-4 mb-4 text-red-500">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+			     stroke="currentColor" class="w-6 h-6 text-red-600">
+				<path stroke-linecap="round" stroke-linejoin="round"
+				      d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M12 18.75H4.5a2.25 2.25 0 01-2.25-2.25V9m12.841 9.091L16.5 19.5m-1.409-1.409c.407-.407.659-.97.659-1.591v-9a2.25 2.25 0 00-2.25-2.25h-9c-.621 0-1.184.252-1.591.659m12.182 12.182L2.909 5.909M1.5 4.5l1.409 1.409"/>
+			</svg>
+
+			<span class="font-semibold leading-7 tracking-tight text-xl uppercase">No Worries, It's Just a Silly Game.</span>
+		</h1>
+		<header v-else
+		        class="-mt-12 flex items-center space-x-3 mb-4 text-indigo-500">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+			     stroke="currentColor" class="w-8 h-8 text-indigo-600">
+				<path stroke-linecap="round"
+				      d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z"/>
+			</svg>
+			<span class="font-semibold leading-7 tracking-tight text-xl uppercase">Noice. You Got It!</span>
+		</header>
 		<template v-if="currentQuestion.omdb">
 			<div
-			  class="relative h-80 w-1/3 overflow-hidden bg-indigo-600 rounded-xl md:absolute md:left-0 md:h-full">
+			  class="h-80 w-1/3 overflow-hidden bg-indigo-600 rounded-xl md:absolute md:left-0 md:h-full">
 				<img class="h-full w-full object-cover"
 				     :src="currentQuestion.omdb.Poster"
-				     alt="">
-				<svg viewBox="0 0 926 676" aria-hidden="true"
-				     class="absolute left-24 -bottom-24 w-[57.875rem] transform-gpu blur-[118px]">
-					<path fill="url(#60c3c621-93e0-4a09-a0e6-4c228a0116d8)" fill-opacity=".4"
-					      d="m254.325 516.708-90.89 158.331L0 436.427l254.325 80.281 163.691-285.15c1.048 131.759 36.144 345.144 168.149 144.613C751.171 125.508 707.17-93.823 826.603 41.15c95.546 107.978 104.766 294.048 97.432 373.585L685.481 297.694l16.974 360.474-448.13-141.46Z"/>
-					<defs>
-						<linearGradient id="60c3c621-93e0-4a09-a0e6-4c228a0116d8" x1="926.392" x2="-109.635"
-						                y1=".176" y2="321.024" gradientUnits="userSpaceOnUse">
-							<stop stop-color="#776FFF"/>
-							<stop offset="1" stop-color="#FF4694"/>
-						</linearGradient>
-					</defs>
-				</svg>
+				     :alt="currentQuestion.omdb.title">
+				<div class="absolute left-0 bottom-0 bg-gray-900/60 w-full h-auto px-8 py-4">
+					<div class="mx-auto text-md font-serif tracking-tight text-gray-500" v-for="(line, index) in currentQuestion.limerick">
+						<span class="inline">{{line}}</span> <span v-if="currentQuestion.limerick.length === index+1" class="inline text-indigo-400 italic">{{ limerickAnswer }}.</span>
+					</div>
+				</div>
 			</div>
 			<div class="relative mx-auto max-w-7xl py-12 lg:px-8">
 				<div class="pr-6 pl-6 md:ml-auto md:pl-16 w-2/3 lg:pr-0">
-					<h2 v-if="currentQuestion.answered === 'skipped'"
-					    class="font-semibold leading-7 text-2xl text-red-600">
-						Bummer! You got the next one.</h2>
-					<h2 v-else class="font-semibold leading-7 text-2xl text-indigo-500">You Got It!</h2>
 					<div class="flex items-center space-x-4 mt-2">
 						<div
 						  class="mt-2 text-2xl font-bold tracking-tight text-white">
 							"{{ currentQuestion.omdb.Title }}" {{ currentQuestion.omdb.Year }}
 						</div>
 						<div
-						  class="inline-flex items-center rounded-full bg-gray-700 px-3 py-1 mt-2.5 text-xs font-medium text-indigo-400">
+						  class="inline-flex whitespace-nowrap items-center rounded-full bg-gray-700 px-3 py-1 mt-2.5 text-xs font-medium text-indigo-400">
 							{{ currentQuestion.omdb.Rated }}
 						</div>
 					</div>
@@ -83,7 +91,8 @@
 				<div
 				  class="inline-block h-12 w-12 animate-spin rounded-full border-8 border-solid border-indigo-700 border-r-transparent align-[-0.125em] text-primary motion-reduce:animate-[spin_1.5s_linear_infinite]"
 				  role="status">
-		            <span class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Loading...</span>
+					<span
+					  class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Loading...</span>
 				</div>
 			</div>
 		</template>
@@ -105,6 +114,17 @@ export default {
 		},
 		nextQuestion() {
 			this.$emit('set-rand-question')
+		}
+	},
+	computed: {
+		limerickLastLine() {
+			return this.currentQuestion.limerick[this.currentQuestion.limerick.length - 1]
+		},
+		limerickAnswer() {
+			if (Array.isArray(this.currentQuestion.answers.end)) {
+				return this.currentQuestion.answers.end[0]
+			}
+			return this.currentQuestion.answers.end
 		}
 	}
 }

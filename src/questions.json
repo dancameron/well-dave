@@ -57,7 +57,7 @@
   },
   {
     "movie": "West Side Story",
-    "imdbId": "tt6710474",
+    "imdbId": "tt3581652",
     "episodeTitle": "Ep. 648 - West Side Story (2021) (GUEST: Caroline Siede)",
     "audioboom": "https://audioboom.com/posts/7996235-ep-648-west-side-story-2021-guest-caroline-siede",
     "timestamp": "1:10:58",
@@ -124,7 +124,7 @@
     ],
     "answers": {
       "movie": [
-        "ANSWER"
+        "Those Who Wish Me Dead"
       ],
       "end": "instead"
     }
@@ -238,7 +238,7 @@
     }
   },
   {
-    "movie": "The Unbearable Weight of Massive Expectations",
+    "movie": "The Unbearable Weight of Massive Talent",
     "imdbId": "tt11291274",
     "episodeTitle": "Ep. 667 - The Unbearable Weight of Massive Talent (GUEST: Keith Phipps from The Reveal)",
     "audioboom": "https://audioboom.com/posts/8072957-ep-667-the-unbearable-weight-of-massive-talent-guest-keith-phipps-from-the-reveal",
@@ -270,9 +270,9 @@
     ],
     "answers": {
       "movie": [
-        "The Unbearable Weight of Massive Expectations",
+        "The Unbearable Weight of Massive Talent",
         "Unbearable Weight",
-        "Unbearable Weight of Massive Expectations"
+        "Unbearable Weight of Massive Talent"
       ],
       "end": "list"
     }
@@ -486,7 +486,7 @@
   },
   {
     "movie": "RRR",
-    "imdbId": "tt10648342",
+    "imdbId": "tt8178634",
     "episodeTitle": "Ep. 673 - RRR (GUEST: Hoai-Tran Bui from Slashfilm)",
     "audioboom": "https://audioboom.com/posts/8096575-ep-673-rrr-guest-hoai-tran-bui-from-slashfilm",
     "timestamp": "1:31:25",
@@ -630,7 +630,8 @@
     ],
     "answers": {
       "movie": [
-        "The Black Phone"
+        "The Black Phone",
+        "Black Phone"
       ],
       "end": "sense"
     }
@@ -741,7 +742,8 @@
     ],
     "answers": {
       "movie": [
-        "Marcel the Shell with Shoes On"
+        "Marcel the Shell with Shoes On",
+        "Marcel the Shell"
       ],
       "end": "it"
     }
@@ -1033,9 +1035,7 @@
       "They’re relevant always to"
     ],
     "answers": {
-      "movie": [
-        "Avatar"
-      ],
+      "movie": "Avatar",
       "end": "me"
     }
   },
@@ -1446,7 +1446,8 @@
     "answers": {
       "movie": [
         "Magic Mike’s Last Dance",
-        "Magic Mike Last Dance"
+        "Magic Mike Last Dance",
+        "Magic Mikes Last Dance"
       ],
       "end": "undress"
     }

@@ -177,7 +177,7 @@ export default {
 
 		showHint() {
 			let question = this.questions[this.findQuestionIndexById(this.currentQuestionId)];
-			question.hintsNeeded++
+			question.hintsNeeded = question.hintsNeeded+1
 			this.setCache()
 		},
 
