@@ -4,7 +4,8 @@ import Conversation from "./components/Conversation.vue";
 import Limerick from "./components/Limerick.vue";
 import AnswerScreen from "./components/AnswerScreen.vue";
 import Stats from "./components/Stats.vue";
-import FooterLinks from "./components/FooterLinks.vue";</script>
+import FooterLinks from "./components/FooterLinks.vue";
+import BonusLimericks from "./components/BonusLimericks.vue";</script>
 
 <template>
 	<div class="font-sans" :class="{'bg-gray-900': answeredOrSkipped}">
@@ -25,6 +26,14 @@ import FooterLinks from "./components/FooterLinks.vue";</script>
 							          :currentQuestion="currentQuestion" @answer-limerick="answerLimerick"
 							          @show-hint="showHint" @next-question="skipCurrentLimerick"/>
 
+							<div class="relative pb-8" v-else-if="quote.bonusLimericks">
+								<BonusLimericks :current-question="currentQuestion"/>
+							</div>
+
+							<Limerick v-else-if="quote.bonusLimerick" :quote="quote" :inputs="inputs" :errors="errors"
+							          :currentQuestion="currentQuestion" @answer-limerick="answerLimerick"
+							          @show-hint="showHint" @next-question="skipCurrentLimerick"/>
+
 							<Conversation v-else :quote="quote"
 							              :last="(index !== currentConversation.length - 1)"/>
 						</li>
@@ -39,6 +48,12 @@ import FooterLinks from "./components/FooterLinks.vue";</script>
 
 		<FooterLinks :current-question-id="currentQuestionId" :v="version" @restart="restart"/>
 
+		<div class="bg-gray-900 text-gray-300 w-full px-32">
+			<header class="text-gray-800 text-xl">Database of movies so far</header>
+			<ul v-for="q in questions">
+				<li>{{ q.episodeTitle }}</li>
+			</ul>
+		</div>
 	</div>
 </template>
 
@@ -52,7 +67,7 @@ export default {
 	data() {
 		return {
 			finished: false,
-			setTotal: 2,
+			setTotal: 10,
 			answerLog: [],
 			errors: {movie: false, end: false},
 			questions: questionsJSON,
@@ -79,6 +94,19 @@ export default {
 		} else {
 			this.setRandQuestion()
 		}
+
+		// TODO This sorts the movies but is really not necessary when live
+		this.questions.sort(function (a, b) {
+			if (a.episodeTitle < b.episodeTitle) {
+				return -1;
+			}
+			if (a.episodeTitle > b.episodeTitle) {
+				return 1;
+			}
+			return 0;
+		})
+
+
 	},
 	methods: {
 
@@ -135,6 +163,7 @@ export default {
 			question.answered = false
 			question.hintsNeeded = 0
 
+			//this.currentQuestionId = 'tt10872600' // todo testing
 			this.currentQuestionId = question.imdbId
 			this.errors = {movie: '', end: ''}
 

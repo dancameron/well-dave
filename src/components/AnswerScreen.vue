@@ -1,7 +1,7 @@
 <template>
-	<div class="relative bg-gray-900">
+	<div class="relative bg-gray-900" v-if="currentQuestion.omdb">
 		<div
-		  class="relative h-80 overflow-hidden bg-indigo-600 rounded-xl md:absolute md:left-0 md:h-full md:w-1/4 lg:w-1/2">
+		  class="relative h-80 w-1/3 overflow-hidden bg-indigo-600 rounded-xl md:absolute md:left-0 md:h-full">
 			<img class="h-full w-full object-cover"
 			     :src="currentQuestion.omdb.Poster"
 			     alt="">
@@ -18,9 +18,10 @@
 				</defs>
 			</svg>
 		</div>
-		<div class="relative mx-auto max-w-7xl py-24 sm:py-32 lg:py-40 lg:px-8">
-			<div class="pr-6 pl-6 md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2 lg:pr-0">
-				<h2 v-if="currentQuestion.answered === 'skipped'" class="font-semibold leading-7 text-2xl text-red-600">Bummer! You got the next one.</h2>
+		<div class="relative mx-auto max-w-7xl py-12 lg:px-8">
+			<div class="pr-6 pl-6 md:ml-auto md:pl-16 w-2/3 lg:pr-0">
+				<h2 v-if="currentQuestion.answered === 'skipped'" class="font-semibold leading-7 text-2xl text-red-600">
+					Bummer! You got the next one.</h2>
 				<h2 v-else class="font-semibold leading-7 text-2xl text-indigo-500">You Got It!</h2>
 				<div class="flex items-center space-x-4 mt-2">
 					<div
@@ -82,7 +83,15 @@ export default {
 	props: {
 		currentQuestion: {}
 	},
+	beforeMount() {
+		this.getOmdb()
+	},
 	methods: {
+		async getOmdb() {
+			let response = await fetch("http://www.omdbapi.com/?apikey=4caa9831&i="+this.currentQuestion.imdbId);
+			this.currentQuestion.omdb = await response.json();
+
+		},
 		nextQuestion() {
 			this.$emit('set-rand-question')
 		}
