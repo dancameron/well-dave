@@ -1,5 +1,5 @@
 <template>
-	<div class="relative bg-gray-900">
+	<div class="bg-gray-900">
 		<h1 v-if="currentQuestion.answered === 'skipped'"
 		    class="-mt-12 flex items-center space-x-4 mb-4 text-red-500">
 			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -8,7 +8,8 @@
 				      d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M12 18.75H4.5a2.25 2.25 0 01-2.25-2.25V9m12.841 9.091L16.5 19.5m-1.409-1.409c.407-.407.659-.97.659-1.591v-9a2.25 2.25 0 00-2.25-2.25h-9c-.621 0-1.184.252-1.591.659m12.182 12.182L2.909 5.909M1.5 4.5l1.409 1.409"/>
 			</svg>
 
-			<span class="font-semibold leading-7 tracking-tight text-xl uppercase">No Worries, It's Just a Silly Game.</span>
+			<span
+			  class="font-semibold leading-7 tracking-tight text-xl uppercase">No Worries, It's Just a Silly Game.</span>
 		</h1>
 		<header v-else
 		        class="-mt-12 flex items-center space-x-3 mb-4 text-indigo-500">
@@ -19,20 +20,25 @@
 			</svg>
 			<span class="font-semibold leading-7 tracking-tight text-xl uppercase">Noice. You Got It!</span>
 		</header>
-		<template v-if="currentQuestion.omdb">
+		<div v-if="currentQuestion.omdb" class="flex pb-8">
 			<div
-			  class="h-80 w-1/3 overflow-hidden bg-indigo-600 rounded-xl md:absolute md:left-0 md:h-full">
-				<img class="h-full w-full object-cover"
-				     :src="currentQuestion.omdb.Poster"
-				     :alt="currentQuestion.omdb.title">
-				<div class="absolute left-0 bottom-0 bg-gray-900/60 w-full h-auto px-8 py-4">
-					<div class="mx-auto text-md font-serif tracking-tight text-gray-500" v-for="(line, index) in currentQuestion.limerick">
-						<span class="inline">{{line}}</span> <span v-if="currentQuestion.limerick.length === index+1" class="inline text-indigo-400 italic">{{ limerickAnswer }}.</span>
+			  class="w-0 sm:w-2/5 overflow-hidden bg-gray-900">
+				<div class="group relative rounded-xl group">
+					<img class="h-auto w-full rounded-lg"
+					     :src="currentQuestion.omdb.Poster"
+					     :alt="currentQuestion.omdb.title">
+					<div class="absolute left-0 bottom-0 bg-gray-900/60 w-full px-8 py-4 text-gray-500 group-hover:bg-gray-900/90 group-hover:text-gray-400">
+						<div class="mx-auto text-md font-serif tracking-tight"
+						     v-for="(line, index) in currentQuestion.limerick">
+							<span class="inline">{{ line }}</span> <span
+						  v-if="currentQuestion.limerick.length === index+1"
+						  class="inline text-indigo-400 italic">{{ limerickAnswer }}.</span>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="relative mx-auto max-w-7xl py-12 lg:px-8">
-				<div class="pr-6 pl-6 md:ml-auto md:pl-16 w-2/3 lg:pr-0">
+			<div class="flex-initial w-full sm:pl-12 sm:w-3/5">
+				<div class="sm:pl-6">
 					<div class="flex items-center space-x-4 mt-2">
 						<div
 						  class="mt-2 text-2xl font-bold tracking-tight text-white">
@@ -85,7 +91,7 @@
 					</div>
 				</div>
 			</div>
-		</template>
+		</div>
 		<template v-else>
 			<div class="flex items-center justify-center mt-32">
 				<div
