@@ -68,7 +68,7 @@
 									<button type="button"
 									        class="w-full rounded-md bg-indigo-50 px-2 py-1.5 text-sm font-bold hover:bg-red-200 hover:text-red-700 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 focus:ring-offset-red-50"
 									        v-on:click="skip()">
-										I gotta take the L on this one
+										Take the L, Get Answer
 									</button>
 								</div>
 							</div>
@@ -146,11 +146,11 @@ export default {
 	},
 	computed: {
 		helpText() {
-			let ht = "Hol'up, I need help"
+			let ht = "Hol'up, Get a Hint"
 			if (1 === this.currentQuestion.hintsNeeded) {
-				ht = "Oh boy, one more hint please"
+				ht = "Sigh, Get Another"
 			} else if (1 < this.currentQuestion.hintsNeeded) {
-				ht = "I got this! Just one more clue"
+				ht = "Roll dem Dice, Get Last Hint"
 			}
 			return ht
 		}

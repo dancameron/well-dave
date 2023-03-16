@@ -167,9 +167,7 @@ export default {
 			return this.questions.length
 		},
 		limericksAttempted() {
-			console.log('this.questions: ', this.questions)
 			return this.questions.filter(function (q) {
-				console.log('q: ', q )
 				return true === q.answered || 'skipped' === q.answered;
 			})
 		},
@@ -189,12 +187,9 @@ export default {
 		},
 		helpUsed() {
 			let needed = 0
-			console.log('help used: ', this.limericksAttempted.json)
 			this.limericksAttempted.forEach(function(q){
-				console.log('needed q: ', q)
 				needed = needed + q.hintsNeeded
 			})
-			console.log('needed: ', needed)
 			return needed
 		},
 		helpAvailable() {
@@ -224,10 +219,6 @@ export default {
 			if ( 0 === this.remainingLimericks ) {
 				bonus = this.totalLimericksAttempted*.5
 			}
-			console.log('limericksAnswered: ', this.limericksAnswered)
-			console.log('totalLimericksAttempted: ', this.totalLimericksAttempted)
-			console.log('helpUsed: ', this.helpUsed)
-			console.log('wrongAnswers: ', this.wrongAnswers)
 			return ((Math.floor((this.limericksAnswered / this.totalLimericksAttempted) * 100)) + bonus) - Math.floor(((this.helpUsed*1.5) + (this.wrongAnswers*.5)));
 		},
 		totalStars() {

@@ -48,10 +48,13 @@ import BonusLimericks from "./components/BonusLimericks.vue";</script>
 
 		<FooterLinks :current-question-id="currentQuestionId" :v="version" @restart="restart"/>
 
-		<div class="bg-gray-900 text-gray-300 w-full px-32">
-			<header class="text-gray-800 text-xl">Database of movies so far</header>
+		<div class="bg-gray-900 text-gray-300 w-full px-32 py-12">
+			<header class="text-gray-800 text-xl text-indigo-300">FOR TESTING: Database of movies, incomplete in <span
+			  class="text-red-500">red</span></header>
 			<ul v-for="q in questions">
-				<li>{{ q.episodeTitle }}</li>
+				<li v-on:click.prevent="goToMoviePage(q.imdbId)" class="cursor-pointer"
+				    :class="{'text-red-500': q.incomplete}">{{ q.episodeTitle }}
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -118,6 +121,14 @@ export default {
 			return JSON.parse(cache)
 
 		},
+		goToMoviePage(id) {
+			let question = this.questions[this.findQuestionIndexById(id)];
+			this.currentQuestionId = id
+			question.answered = false
+			question.hintsNeeded = 0
+			window.scrollTo(0, 0)
+			this.setCache()
+		},
 		skipCurrentLimerick() {
 			let question = this.questions[this.findQuestionIndexById(this.currentQuestionId)];
 			question.answered = 'skipped'
@@ -177,7 +188,7 @@ export default {
 
 		showHint() {
 			let question = this.questions[this.findQuestionIndexById(this.currentQuestionId)];
-			question.hintsNeeded = question.hintsNeeded+1
+			question.hintsNeeded = question.hintsNeeded + 1
 			this.setCache()
 		},
 
@@ -189,7 +200,6 @@ export default {
 			if (Array.isArray(question.answers.movie)) {
 				this.errors.movie = (question.answers.movie.findIndex(x => x.toLowerCase() === this.inputs.movie.toLowerCase()) < 0)
 			} else {
-				console.log(question.answers.movie)
 				this.errors.movie = !(this.inputs.movie.toLowerCase() === question.answers.movie.toLowerCase())
 			}
 

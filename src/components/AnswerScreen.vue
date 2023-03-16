@@ -115,17 +115,14 @@ export default {
 	},
 	methods: {
 		async getOmdb() {
-			let response = await fetch("http://www.omdbapi.com/?apikey=4caa9831&i=" + this.currentQuestion.imdbId);
-			this.currentQuestion.omdb = await response.json();
+			let response = await fetch("http://www.omdbapi.com/?apikey=4caa9831&i=" + this.currentQuestion.imdbId)
+			this.currentQuestion.omdb = await response.json()
 		},
 		nextQuestion() {
 			this.$emit('set-rand-question')
 		}
 	},
 	computed: {
-		limerickLastLine() {
-			return this.currentQuestion.limerick[this.currentQuestion.limerick.length - 1]
-		},
 		limerickAnswer() {
 			if (Array.isArray(this.currentQuestion.answers.end)) {
 				return this.currentQuestion.answers.end[0]
