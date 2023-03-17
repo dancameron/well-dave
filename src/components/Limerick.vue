@@ -35,17 +35,26 @@
 								<li class="mb-1 text-xl text-gray-800"
 								    v-for="(line, index) in currentQuestion.limerick">
 									{{ line }}
-									<span v-if="currentQuestion.limerick.length === index+1" class="inline">
+									<span v-if="currentQuestion.limerick.length === index+1" class="inline relative">
 										<input v-model="end" type="text"
-										       class="inline bg-gray-50 w-32 h-8 text-lg border-0 border-b-2 border-dashed p-1.5 text-gray-900 placeholder:text-gray-400 hover:border-solid focus-visible:outline-none focus:border-indigo-600 focus:border-solid sm:leading-6"
+										       class="inline bg-gray-50 w-40 h-8 text-lg border-0 border-b-2 border-dashed p-1.5 pr-8 text-gray-900 placeholder:text-gray-400 hover:border-solid focus-visible:outline-none focus:border-indigo-600 focus:border-solid sm:leading-6"
 										       :class="{'text-indigo-600 border-indigo-300': !errors.end, 'border-red-200 text-red-400 focus:text-indigo-600': errors.end }"
 										       placeholder="Last Word" aria-describedby="Last Word">.
+										<span title="Fill in the last word" v-on:click="giveLimerickEnd()" class="absolute cursor-pointer -top-1 right-2">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+											     stroke-width="1.5" stroke="currentColor"
+											     class="inline w-5 h-5 text-indigo-100 hover:text-indigo-400">
+											  <path stroke-linecap="round" stroke-linejoin="round"
+											        d="M16.712 4.33a9.027 9.027 0 011.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 00-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 010 9.424m-4.138-5.976a3.736 3.736 0 00-.88-1.388 3.737 3.737 0 00-1.388-.88m2.268 2.268a3.765 3.765 0 010 2.528m-2.268-4.796a3.765 3.765 0 00-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 01-1.388.88m2.268-2.268l4.138 3.448m0 0a9.027 9.027 0 01-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0l-3.448-4.138m3.448 4.138a9.014 9.014 0 01-9.424 0m5.976-4.138a3.765 3.765 0 01-2.528 0m0 0a3.736 3.736 0 01-1.388-.88 3.737 3.737 0 01-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 01-1.652-1.306 9.027 9.027 0 01-1.306-1.652m0 0l4.138-3.448M4.33 16.712a9.014 9.014 0 010-9.424m4.138 5.976a3.765 3.765 0 010-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 011.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 00-1.652 1.306A9.025 9.025 0 004.33 7.288"/>
+											</svg>
+										</span>
 									</span>
 								</li>
 							</ul>
 						</div>
 					</div>
-					<div class="w-auto lg:w-1/4 xl:w-1/3 mt-4 lg:mt-0 rounded-sm text-xs bg-gray-50 px-4 drop-shadow-sm">
+					<div
+					  class="w-auto lg:w-1/4 xl:w-1/3 mt-4 lg:mt-0 rounded-sm text-xs bg-gray-50 px-4 drop-shadow-sm">
 						<div class="pt-1 pb-4">
 							<ul class="text-gray-300 flex flex-col mx-auto divide-y divide-dashed">
 								<li v-for="(hint, index) in currentQuestion.hints" class="py-2"
@@ -143,6 +152,10 @@ export default {
 		skip() {
 			this.$emit('next-question')
 		},
+		giveLimerickEnd() {
+			this.end = this.currentQuestion.answers.end
+			this.$emit('show-end')
+		}
 	},
 	computed: {
 		helpText() {
@@ -157,13 +170,13 @@ export default {
 	},
 	watch: {
 		movie: function (newAnswer, oldAnswer) {
-			if ( newAnswer !== oldAnswer ) {
+			if (newAnswer !== oldAnswer) {
 				this.errors.movie = false
 				this.errors.end = false
 			}
 		},
 		end: function (newAnswer, oldAnswer) {
-			if ( newAnswer !== oldAnswer ) {
+			if (newAnswer !== oldAnswer) {
 				this.errors.end = false
 				this.errors.movie = false
 			}

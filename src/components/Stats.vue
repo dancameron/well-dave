@@ -6,18 +6,26 @@
 			<div class="mx-auto mb-12 max-w-7xl sm:px-6">
 				<div
 				  class="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
-					<p class="-mt-8 mb-2 mx-auto max-w-2xl uppercase font-bold text-indigo-400">Total Score: <span class="font-thin">{{ totalScore }} point</span></p>
+					<p class="-mt-8 mb-2 mx-auto max-w-2xl uppercase font-bold text-indigo-400">Total Score: <span
+					  class="font-thin">{{ totalScore }} points</span></p>
 
-					<h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">Thank you for playing!</h2>
+					<h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">Thank you for
+						playing!</h2>
 
-					<p v-if="remainingLimericks" class="mx-auto mt-6 max-w-xl font-serif text-lg leading-8 text-gray-300">Below you'll find some stats but you don't need to stop. There are still <span class="font-bold">{{remainingLimericks}}</span> limericks you haven't yet answered.</p>
-					<p v-else class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300 font-serif">Truly cannot believe you finished the entire game. That's pretty spectacular. Don't tell anyone but you got some bonus points.</p>
+					<p v-if="remainingLimericks"
+					   class="mx-auto mt-6 max-w-xl font-serif text-lg leading-8 text-gray-300">Below you'll find some
+						stats but you don't need to stop. There are still <span
+						  class="font-bold">{{ remainingLimericks }}</span> limericks you haven't yet answered.</p>
+					<p v-else class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300 font-serif">Truly cannot
+						believe you finished the entire game. That's pretty spectacular. Don't tell anyone but you got
+						some bonus points.</p>
 					<div class="mt-10 flex items-center justify-center gap-x-6">
 						<a v-if="remainingLimericks" v-on:click="nextQuestion"
 						   class="cursor-pointer rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
 							Play on
 						</a>
-						<a href="https://www.patreon.com/filmpodcast" target="_blank" class="text-sm font-semibold leading-6 text-white">Support The Filmcast <span
+						<a href="https://www.patreon.com/filmpodcast" target="_blank"
+						   class="text-sm font-semibold leading-6 text-white">Support The Filmcast <span
 						  aria-hidden="true">→</span></a>
 					</div>
 					<svg viewBox="0 0 1024 1024"
@@ -36,7 +44,7 @@
 			</div>
 
 			<dl
-			  class="mt-5 grid grid-cols-1 divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow md:grid-cols-3 md:divide-y-0 md:divide-x">
+			  class="mt-5 grid grid-cols-1 divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow md:grid-cols-4 md:divide-y-0 md:divide-x">
 				<div class="px-4 py-5 sm:p-6">
 					<dt class="text-base font-normal text-gray-900">Answered Correctly</dt>
 					<dd class="mt-1 flex items-center justify-between md:block lg:flex">
@@ -114,6 +122,34 @@
 				</div>
 
 				<div class="px-4 py-5 sm:p-6">
+					<dt class="text-base font-normal text-gray-900">Endings Given</dt>
+					<dd class="mt-1 flex items-center justify-between md:block lg:flex">
+						<div class="flex items-baseline text-2xl font-semibold text-orange-600">
+							{{ endingsProvided }}
+							<span
+							  class="ml-2 text-sm font-medium text-gray-500">of {{
+									totalLimericksAttempted
+								}} available</span>
+						</div>
+
+						<div
+						  class="inline-flex items-baseline rounded-full px-3 py-1 text-sm font-medium bg-orange-50 text-orange-900 md:mt-2 lg:mt-0">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+							     stroke="currentColor"
+							     class="-ml-1 mr-1 h-5 w-5 flex-shrink-0 self-center text-orange-500">
+								<path stroke-linecap="round" stroke-linejoin="round"
+								      d="M16.712 4.33a9.027 9.027 0 011.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 00-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 010 9.424m-4.138-5.976a3.736 3.736 0 00-.88-1.388 3.737 3.737 0 00-1.388-.88m2.268 2.268a3.765 3.765 0 010 2.528m-2.268-4.796a3.765 3.765 0 00-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 01-1.388.88m2.268-2.268l4.138 3.448m0 0a9.027 9.027 0 01-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0l-3.448-4.138m3.448 4.138a9.014 9.014 0 01-9.424 0m5.976-4.138a3.765 3.765 0 01-2.528 0m0 0a3.736 3.736 0 01-1.388-.88 3.737 3.737 0 01-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 01-1.652-1.306 9.027 9.027 0 01-1.306-1.652m0 0l4.138-3.448M4.33 16.712a9.014 9.014 0 010-9.424m4.138 5.976a3.765 3.765 0 010-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 011.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 00-1.652 1.306A9.025 9.025 0 004.33 7.288"/>
+							</svg>
+							{{ percentEndGiven }}%
+						</div>
+					</dd>
+					<dd class="mt-3">
+						<span
+						  class="text-sm font-medium text-gray-300">Some very clever limericks</span>
+					</dd>
+				</div>
+
+				<div class="px-4 py-5 sm:p-6">
 					<dt class="text-base font-normal text-gray-900">Hints Viewed</dt>
 					<dd class="mt-1 flex items-center justify-between md:block lg:flex">
 						<div class="flex items-baseline text-2xl font-semibold text-green-600">
@@ -128,7 +164,7 @@
 							     stroke="currentColor"
 							     class="-ml-1 mr-1 h-5 w-5 flex-shrink-0 self-center text-green-500">
 								<path stroke-linecap="round" stroke-linejoin="round"
-								      d="M16.712 4.33a9.027 9.027 0 011.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 00-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 010 9.424m-4.138-5.976a3.736 3.736 0 00-.88-1.388 3.737 3.737 0 00-1.388-.88m2.268 2.268a3.765 3.765 0 010 2.528m-2.268-4.796a3.765 3.765 0 00-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 01-1.388.88m2.268-2.268l4.138 3.448m0 0a9.027 9.027 0 01-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0l-3.448-4.138m3.448 4.138a9.014 9.014 0 01-9.424 0m5.976-4.138a3.765 3.765 0 01-2.528 0m0 0a3.736 3.736 0 01-1.388-.88 3.737 3.737 0 01-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 01-1.652-1.306 9.027 9.027 0 01-1.306-1.652m0 0l4.138-3.448M4.33 16.712a9.014 9.014 0 010-9.424m4.138 5.976a3.765 3.765 0 010-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 011.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 00-1.652 1.306A9.025 9.025 0 004.33 7.288"/>
+								      d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/>
 							</svg>
 							{{ percentHelp }}%
 						</div>
@@ -185,19 +221,29 @@ export default {
 		percentAnswered() {
 			return Math.floor((this.limericksAnswered / this.totalLimericksAttempted) * 100)
 		},
+		endingsProvided() {
+			let gaveEnd = 0
+			this.limericksAttempted.forEach(function (q) {
+				gaveEnd = gaveEnd + q.gaveEnd
+			})
+			return gaveEnd
+		},
 		helpUsed() {
 			let needed = 0
-			this.limericksAttempted.forEach(function(q){
+			this.limericksAttempted.forEach(function (q) {
 				needed = needed + q.hintsNeeded
 			})
 			return needed
 		},
 		helpAvailable() {
 			let hints = 0
-			this.limericksAttempted.forEach(function(q){
+			this.limericksAttempted.forEach(function (q) {
 				hints = hints + q.hints.length
 			})
 			return hints
+		},
+		percentEndGiven() {
+			return Math.floor((this.endingsProvided / this.totalLimericksAttempted) * 100)
 		},
 		percentHelp() {
 			return Math.floor((this.helpUsed / this.helpAvailable) * 100)
@@ -211,15 +257,17 @@ export default {
 			// start with the percent as a score of 100
 			// assuming the game is set at 10 limericks per set, that would be
 			// 10 points per limerick
-			// take 1.5 points off for help
+			// take 1 points off if ending was shown
+			// take .75 points off for help
 			// take .5 point off for answering incorrectly
 			// that way if someone gets 3 hints and guesses wrong once they'd get 5 points.
 			// added points if you complete all questions
 			let bonus = 0
-			if ( 0 === this.remainingLimericks ) {
-				bonus = this.totalLimericksAttempted*.5
+			if (0 === this.remainingLimericks) {
+				bonus = this.totalLimericksAttempted * .5
 			}
-			return ((Math.floor((this.limericksAnswered / this.totalLimericksAttempted) * 100)) + bonus) - Math.floor(((this.helpUsed*1.5) + (this.wrongAnswers*.5)));
+			console.log(this.endingsProvided)
+			return ((Math.floor((this.limericksAnswered / this.totalLimericksAttempted) * 100)) + bonus) - Math.floor(((this.endingsProvided) + (this.helpUsed * .75) + (this.wrongAnswers * .5)));
 		},
 		totalStars() {
 			let s = this.totalScore / 20

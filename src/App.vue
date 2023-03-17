@@ -24,7 +24,7 @@ import BonusLimericks from "./components/BonusLimericks.vue";</script>
 
 							<Limerick v-if="quote.limerick" :quote="quote" :inputs="inputs" :errors="errors"
 							          :currentQuestion="currentQuestion" @answer-limerick="answerLimerick"
-							          @show-hint="showHint" @next-question="skipCurrentLimerick"/>
+							          @show-hint="showHint" @show-end="giveLimerickEnd" @next-question="skipCurrentLimerick"/>
 
 							<div class="relative pb-8" v-else-if="quote.bonusLimericks">
 								<BonusLimericks :current-question="currentQuestion"/>
@@ -70,7 +70,7 @@ export default {
 	data() {
 		return {
 			finished: false,
-			setTotal: 10,
+			setTotal: 2,
 			answerLog: [],
 			errors: {movie: false, end: false},
 			questions: questionsJSON,
@@ -126,6 +126,7 @@ export default {
 			this.currentQuestionId = id
 			question.answered = false
 			question.hintsNeeded = 0
+			question.gaveEnd = false
 			window.scrollTo(0, 0)
 			this.setCache()
 		},
@@ -136,12 +137,13 @@ export default {
 			this.answerLog.push({
 				'id': this.currentQuestionId,
 				'hintsUsed': question.hintsNeeded,
+				'gaveEnd': question.gaveEnd,
 				'answered': false,
 				'time': Date.now()
 			})
 		},
 		upSetTotal() {
-			this.setTotal = this.setTotal + 10
+			this.setTotal = this.setTotal + this.setTotal
 			this.finished = false
 			this.setRandQuestion()
 		},
@@ -156,7 +158,7 @@ export default {
 			}
 
 			let qs = this.questions.filter(function (q) {
-				return undefined === q.answered || false === q.answered;
+				return (undefined === q.answered || false === q.answered) && (undefined === q.incomplete);
 			});
 
 			// no more limericks!
@@ -173,6 +175,7 @@ export default {
 
 			question.answered = false
 			question.hintsNeeded = 0
+			question.gaveEnd = false
 
 			//this.currentQuestionId = 'tt10872600' // todo testing
 			this.currentQuestionId = question.imdbId
@@ -189,6 +192,12 @@ export default {
 		showHint() {
 			let question = this.questions[this.findQuestionIndexById(this.currentQuestionId)];
 			question.hintsNeeded = question.hintsNeeded + 1
+			this.setCache()
+		},
+
+		giveLimerickEnd() {
+			let question = this.questions[this.findQuestionIndexById(this.currentQuestionId)];
+			question.gaveEnd = true
 			this.setCache()
 		},
 
@@ -222,6 +231,7 @@ export default {
 				'inputs': this.inputs,
 				'errors': this.errors,
 				'hintsUsed': question.hintsNeeded,
+				'gaveEnd': question.gaveEnd,
 				'answered': question.answered,
 				'time': Date.now()
 			})
