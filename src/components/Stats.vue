@@ -74,6 +74,60 @@
 				</div>
 
 				<div class="px-4 py-5 sm:p-6">
+					<dt class="text-base font-normal text-gray-900">Endings Given</dt>
+					<dd class="mt-1 flex items-center justify-between md:block lg:flex">
+						<div class="flex items-baseline text-2xl font-semibold text-orange-600">
+							{{ endingsProvided }}
+							<span
+							  class="ml-2 text-sm font-medium text-gray-500">of {{
+									totalLimericksAttempted
+								}} available</span>
+						</div>
+
+						<div
+						  class="inline-flex items-baseline rounded-full px-3 py-1 text-sm font-medium bg-orange-50 text-orange-900 md:mt-2 lg:mt-0">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+							     stroke="currentColor"
+							     class="-ml-1 mr-1 h-5 w-5 flex-shrink-0 self-center text-orange-500">
+								<path stroke-linecap="round" stroke-linejoin="round"
+								      d="M16.712 4.33a9.027 9.027 0 011.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 00-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 010 9.424m-4.138-5.976a3.736 3.736 0 00-.88-1.388 3.737 3.737 0 00-1.388-.88m2.268 2.268a3.765 3.765 0 010 2.528m-2.268-4.796a3.765 3.765 0 00-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 01-1.388.88m2.268-2.268l4.138 3.448m0 0a9.027 9.027 0 01-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0l-3.448-4.138m3.448 4.138a9.014 9.014 0 01-9.424 0m5.976-4.138a3.765 3.765 0 01-2.528 0m0 0a3.736 3.736 0 01-1.388-.88 3.737 3.737 0 01-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 01-1.652-1.306 9.027 9.027 0 01-1.306-1.652m0 0l4.138-3.448M4.33 16.712a9.014 9.014 0 010-9.424m4.138 5.976a3.765 3.765 0 010-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 011.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 00-1.652 1.306A9.025 9.025 0 004.33 7.288"/>
+							</svg>
+							{{ percentEndGiven }}%
+						</div>
+					</dd>
+					<dd class="mt-3">
+						<span
+						  class="text-sm font-medium text-gray-300">Some very clever limericks</span>
+					</dd>
+				</div>
+
+				<div class="px-4 py-5 sm:p-6">
+					<dt class="text-base font-normal text-gray-900">Hints Viewed</dt>
+					<dd class="mt-1 flex items-center justify-between md:block lg:flex">
+						<div class="flex items-baseline text-2xl font-semibold text-green-600">
+							{{ helpUsed }}
+							<span
+							  class="ml-2 text-sm font-medium text-gray-500">of {{ helpAvailable }} available</span>
+						</div>
+
+						<div
+						  class="inline-flex items-baseline rounded-full px-3 py-1 text-sm font-medium bg-green-50 text-green-900 md:mt-2 lg:mt-0">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+							     stroke="currentColor"
+							     class="-ml-1 mr-1 h-5 w-5 flex-shrink-0 self-center text-green-500">
+								<path stroke-linecap="round" stroke-linejoin="round"
+								      d="M15.75 15.75l-2.489-2.489m0 0a3.375 3.375 0 10-4.773-4.773 3.375 3.375 0 004.774 4.774zM21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							{{ percentHelp }}%
+						</div>
+					</dd>
+					<dd class="mt-3">
+						<span
+						  class="text-sm font-medium text-gray-300">Hopefully the help was helpful</span>
+					</dd>
+				</div>
+
+				<div class="px-4 py-5 sm:p-6">
 					<dt class="text-base font-normal text-gray-900">Calculated Score</dt>
 					<dd class="mt-1 flex items-center justify-between md:block lg:flex">
 
@@ -118,60 +172,6 @@
 					<dd class="mt-3">
 						<span
 						  class="text-sm font-medium text-gray-300">Indeed, this game is rather difficult</span>
-					</dd>
-				</div>
-
-				<div class="px-4 py-5 sm:p-6">
-					<dt class="text-base font-normal text-gray-900">Endings Given</dt>
-					<dd class="mt-1 flex items-center justify-between md:block lg:flex">
-						<div class="flex items-baseline text-2xl font-semibold text-orange-600">
-							{{ endingsProvided }}
-							<span
-							  class="ml-2 text-sm font-medium text-gray-500">of {{
-									totalLimericksAttempted
-								}} available</span>
-						</div>
-
-						<div
-						  class="inline-flex items-baseline rounded-full px-3 py-1 text-sm font-medium bg-orange-50 text-orange-900 md:mt-2 lg:mt-0">
-							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-							     stroke="currentColor"
-							     class="-ml-1 mr-1 h-5 w-5 flex-shrink-0 self-center text-orange-500">
-								<path stroke-linecap="round" stroke-linejoin="round"
-								      d="M16.712 4.33a9.027 9.027 0 011.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 00-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 010 9.424m-4.138-5.976a3.736 3.736 0 00-.88-1.388 3.737 3.737 0 00-1.388-.88m2.268 2.268a3.765 3.765 0 010 2.528m-2.268-4.796a3.765 3.765 0 00-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 01-1.388.88m2.268-2.268l4.138 3.448m0 0a9.027 9.027 0 01-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0l-3.448-4.138m3.448 4.138a9.014 9.014 0 01-9.424 0m5.976-4.138a3.765 3.765 0 01-2.528 0m0 0a3.736 3.736 0 01-1.388-.88 3.737 3.737 0 01-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 01-1.652-1.306 9.027 9.027 0 01-1.306-1.652m0 0l4.138-3.448M4.33 16.712a9.014 9.014 0 010-9.424m4.138 5.976a3.765 3.765 0 010-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 011.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 00-1.652 1.306A9.025 9.025 0 004.33 7.288"/>
-							</svg>
-							{{ percentEndGiven }}%
-						</div>
-					</dd>
-					<dd class="mt-3">
-						<span
-						  class="text-sm font-medium text-gray-300">Some very clever limericks</span>
-					</dd>
-				</div>
-
-				<div class="px-4 py-5 sm:p-6">
-					<dt class="text-base font-normal text-gray-900">Hints Viewed</dt>
-					<dd class="mt-1 flex items-center justify-between md:block lg:flex">
-						<div class="flex items-baseline text-2xl font-semibold text-green-600">
-							{{ helpUsed }}
-							<span
-							  class="ml-2 text-sm font-medium text-gray-500">of {{ helpAvailable }} available</span>
-						</div>
-
-						<div
-						  class="inline-flex items-baseline rounded-full px-3 py-1 text-sm font-medium bg-green-50 text-green-900 md:mt-2 lg:mt-0">
-							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-							     stroke="currentColor"
-							     class="-ml-1 mr-1 h-5 w-5 flex-shrink-0 self-center text-green-500">
-								<path stroke-linecap="round" stroke-linejoin="round"
-								      d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/>
-							</svg>
-							{{ percentHelp }}%
-						</div>
-					</dd>
-					<dd class="mt-3">
-						<span
-						  class="text-sm font-medium text-gray-300">Hopefully the help was helpful</span>
 					</dd>
 				</div>
 			</dl>

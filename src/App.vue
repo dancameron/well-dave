@@ -12,7 +12,7 @@ import BonusLimericks from "./components/BonusLimericks.vue";</script>
 
 		<div v-if="!finished" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-			<div class="mx-auto max-w-5xl sm:py-32">
+			<div class="mx-auto py-8 sm:py-12 lg:py-32">
 
 				<div v-if="answeredOrSkipped">
 					<AnswerScreen :current-question="currentQuestion" @set-rand-question="setRandQuestion"/>
@@ -70,7 +70,7 @@ export default {
 	data() {
 		return {
 			finished: false,
-			setTotal: 2,
+			setTotal: 10,
 			answerLog: [],
 			errors: {movie: false, end: false},
 			questions: questionsJSON,

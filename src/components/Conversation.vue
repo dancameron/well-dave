@@ -2,7 +2,7 @@
 	<div class="relative pb-8 group group">
 		<span v-if="last" class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-50 md:bg-gray-200" aria-hidden="true"></span>
 		<div class="relative flex items-start space-x-4">
-			<div class="relative">
+			<div class="relative ml-1">
 
 				<img
 				  v-if="speakerAvatar !== false"

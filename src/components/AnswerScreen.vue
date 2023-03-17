@@ -1,7 +1,7 @@
 <template>
 	<div class="bg-gray-900">
 		<h1 v-if="currentQuestion.answered === 'skipped'"
-		    class="-mt-12 flex items-center space-x-4 mb-4 text-red-500">
+		    class="lg:-mt-12 flex items-center space-x-4 mb-4 text-red-500">
 			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
 			     stroke="currentColor" class="w-6 h-6 text-red-600">
 				<path stroke-linecap="round" stroke-linejoin="round"
@@ -20,14 +20,14 @@
 			</svg>
 			<span class="font-semibold leading-7 tracking-tight text-xl uppercase">Noice. You Got It!</span>
 		</header>
-		<div v-if="currentQuestion.omdb" class="flex pb-8">
+		<div v-if="currentQuestion.omdb" class="sm:flex pb-8">
 			<div
-			  class="w-0 sm:w-2/5 overflow-hidden bg-gray-900">
+			  class="w-full sm:w-2/5 md:w-1/2 lg:w-1/3 overflow-hidden bg-gray-900">
 				<div class="group relative rounded-xl group">
 					<img class="h-auto w-full rounded-lg"
 					     :src="currentQuestion.omdb.Poster"
 					     :alt="currentQuestion.omdb.title">
-					<div class="absolute left-0 bottom-0 bg-gray-900/60 w-full px-8 py-4 text-gray-500 group-hover:bg-gray-900/90 group-hover:text-gray-400">
+					<div class="absolute left-0 bottom-0 bg-gray-900/70 w-full px-8 py-4 text-gray-500 group-hover:bg-gray-900/90 group-hover:text-gray-400">
 						<div class="mx-auto text-md font-serif tracking-tight"
 						     v-for="(line, index) in currentQuestion.limerick">
 							<span class="inline">{{ line }}</span> <span
