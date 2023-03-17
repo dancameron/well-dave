@@ -3,10 +3,10 @@
 		<div class="relative">
 			<span class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-50 md:bg-gray-200" aria-hidden="true"></span>
 			<div class="relative flex items-start space-x-4">
-				<div class="relative ml-1">
+				<div class="relative -ml-2">
 
 					<img
-					  class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-400 ring-8 ring-white"
+					  class="flex h-14 w-14 items-center justify-center rounded-full bg-gray-400 ring-8 ring-white"
 					  src="https://pbs.twimg.com/profile_images/1215353085435858945/2Mo37MGA_400x400.jpg">
 
 					<span class="absolute -bottom-0.5 -right-1 rounded-tl bg-white px-0.5 py-px">
