@@ -5,7 +5,8 @@ import Limerick from "./components/Limerick.vue";
 import AnswerScreen from "./components/AnswerScreen.vue";
 import Stats from "./components/Stats.vue";
 import FooterLinks from "./components/FooterLinks.vue";
-import BonusLimericks from "./components/BonusLimericks.vue";</script>
+import BonusLimericks from "./components/BonusLimericks.vue";
+import FooterNav from "./FooterNav.vue";</script>
 
 <template>
 	<div class="font-sans" :class="{'bg-gray-900': answeredOrSkipped}">
@@ -24,7 +25,8 @@ import BonusLimericks from "./components/BonusLimericks.vue";</script>
 
 							<Limerick v-if="quote.limerick" :quote="quote" :inputs="inputs" :errors="errors"
 							          :currentQuestion="currentQuestion" @answer-limerick="answerLimerick"
-							          @show-hint="showHint" @show-end="giveLimerickEnd" @next-question="skipCurrentLimerick"/>
+							          @show-hint="showHint" @show-end="giveLimerickEnd"
+							          @next-question="skipCurrentLimerick"/>
 
 							<div class="relative pb-8" v-else-if="quote.bonusLimericks">
 								<BonusLimericks :current-question="currentQuestion"/>
@@ -48,15 +50,8 @@ import BonusLimericks from "./components/BonusLimericks.vue";</script>
 
 		<FooterLinks :current-question-id="currentQuestionId" :v="version" @restart="restart"/>
 
-		<div class="bg-gray-900 text-gray-300 w-full px-32 py-12">
-			<header class="text-gray-800 text-xl text-indigo-300">FOR TESTING: Database of movies, incomplete in <span
-			  class="text-red-500">red</span></header>
-			<ul v-for="q in questions">
-				<li v-on:click.prevent="goToMoviePage(q.imdbId)" class="cursor-pointer"
-				    :class="{'text-red-500': q.incomplete}">{{ q.episodeTitle }}
-				</li>
-			</ul>
-		</div>
+		<FooterNav @go-to-movie="goToMoviePage" :questions="questions"/>
+
 	</div>
 </template>
 
@@ -100,10 +95,10 @@ export default {
 
 		// TODO This sorts the movies but is really not necessary when live
 		this.questions.sort(function (a, b) {
-			if (a.episodeTitle < b.episodeTitle) {
+			if (a.episodeTitle > b.episodeTitle) {
 				return -1;
 			}
-			if (a.episodeTitle > b.episodeTitle) {
+			if (a.episodeTitle < b.episodeTitle) {
 				return 1;
 			}
 			return 0;
@@ -122,7 +117,9 @@ export default {
 
 		},
 		goToMoviePage(id) {
+			console.log(id)
 			let question = this.questions[this.findQuestionIndexById(id)];
+			console.log(question)
 			this.currentQuestionId = id
 			question.answered = false
 			question.hintsNeeded = 0

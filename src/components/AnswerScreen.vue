@@ -12,7 +12,7 @@
 			  class="font-semibold leading-7 tracking-tight text-xl uppercase">No Worries, It's Just a Silly Game.</span>
 		</h1>
 		<header v-else
-		        class="-mt-12 flex items-center space-x-3 mb-4 text-indigo-500">
+		        class="sm:-mt-12 flex items-center space-x-3 mb-4 text-indigo-500">
 			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
 			     stroke="currentColor" class="w-8 h-8 text-indigo-600">
 				<path stroke-linecap="round"
@@ -27,7 +27,7 @@
 					<img class="h-auto w-full rounded-lg"
 					     :src="currentQuestion.omdb.Poster"
 					     :alt="currentQuestion.omdb.title">
-					<div class="absolute left-0 bottom-0 bg-gray-900/70 w-full px-8 py-4 text-gray-500 group-hover:bg-gray-900/90 group-hover:text-gray-400">
+					<div class="absolute left-0 bottom-0 bg-gray-900/90 sm:bg-gray-900/70 w-full px-8 py-4 text-gray-500 group-hover:bg-gray-900/90 group-hover:text-gray-400">
 						<div class="mx-auto text-md font-serif tracking-tight"
 						     v-for="(line, index) in currentQuestion.limerick">
 							<span class="inline">{{ line }}</span> <span
