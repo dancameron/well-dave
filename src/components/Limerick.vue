@@ -24,7 +24,7 @@
 
 					<div class="mb-2 sm:mb-8 text-lg sm:text-xl text-gray-700 font-sans font-black capitalize">
 						I guess you could say my thoughts on <input v-model="movie" type="text"
-						                                            class="inline bg-gray-50 h-8 text-xl border-0 border-b-2 border-dashed p-1.5 text-gray-900 placeholder:text-gray-300 hover:border-solid focus-visible:outline-none focus:border-sky-600 focus:border-solid sm:leading-6"
+						                                            class="inline mx-2 bg-gray-50 h-8 text-xl border-0 border-b-2 border-dashed p-1.5 text-gray-900 placeholder:text-gray-300 hover:border-solid focus-visible:outline-none focus:border-sky-600 focus:border-solid sm:leading-6"
 						                                            :class="{'text-sky-600 border-sky-400': !errors.movie, 'border-red-200 text-red-400 focus:text-sky-600': errors.movie }"
 						                                            placeholder="Movie Title"
 						                                            aria-describedby="Movie Title"> are best summed up
@@ -37,7 +37,7 @@
 							    v-for="(line, index) in currentQuestion.limerick">
 								<span v-if="true" v-html="line" />
 								<span v-else v-html="limerickLine(line)" class="capitalize" />
-								<span v-if="currentQuestion.limerick.length === index+1" class="inline relative">
+								<span v-if="currentQuestion.limerick.length === index+1" class="ml-2 inline relative">
 										<input v-model="end" type="text"
 										       class="inline bg-gray-50 w-40 h-8 text-lg border-0 border-b-2 border-dashed p-1.5 pr-8 text-gray-900 placeholder:text-gray-300 hover:border-solid focus-visible:outline-none focus:border-sky-600 focus:border-solid sm:leading-6"
 										       :class="{'text-sky-600 border-sky-400': !errors.end, 'border-red-200 text-red-400 focus:text-sky-600': errors.end }"
@@ -99,7 +99,7 @@
 		<div
 		  class="w-auto -ml-8 sm:ml-0 lg:max-w-1/5 xl:w-1/3 mt-4 lg:mt-0 rounded-sm text-xs">
 			<div class="pl-8 group">
-				<ul class="text-gray-300 flex flex-col mx-auto divide-y divide-dashed">
+				<ul class="text-gray-500 flex flex-col mx-auto divide-y divide-dashed">
 					<li v-for="(hint, index) in currentQuestion.hints" class="py-2 flex items-baseline space-x-3 cursor-zoom-in">
 
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -109,7 +109,7 @@
 						</svg>
 
 						<span class="select-none"
-						      :class="{'blur-0 text-gray-600': index <= currentQuestion.hintsNeeded-1, 'blur-sm': index > currentQuestion.hintsNeeded-1 }">{{
+						      :class="{'font-sans': index <= currentQuestion.hintsNeeded-1, 'text-gray-200 font-block': index > currentQuestion.hintsNeeded-1 }">{{
 								hint
 							}}</span>
 					</li>
@@ -117,7 +117,7 @@
 				<div class="block mt-2" v-if="currentQuestion.hintsNeeded < currentQuestion.hints.length">
 					<div class="flex">
 						<button type="button"
-						        class="w-full rounded-md text-sky-200 bg-gray-50 px-2 py-1.5 text-sm font-bold group-hover:bg-sky-50 group-hover:text-sky-300 focus:outline-none focus:ring-0"
+						        class="w-full rounded-md text-sky-300 bg-gray-50 px-2 py-1.5 text-sm font-bold group-hover:bg-sky-50 group-hover:text-sky-300 focus:outline-none focus:ring-0"
 						        :class="{'bg-red-100 text-red-700': errors.movie || errors.end}"
 						        v-on:click="revealHint()">
 							<span>{{ helpText }}</span>

@@ -12,7 +12,7 @@
 				<div class="group relative w-96">
 
 					<button type="button"
-					        class="relative w-full cursor-default text-sm text-sky-300 rounded-md border border-gray-200 bg-white py-2 px-5 text-left shadow-sm focus:border-sky focus:outline-none focus:ring-1 focus:ring-sky"
+					        class="relative w-full cursor-default text-sm text-sky-400 rounded-md border border-gray-200 bg-white py-2 px-5 text-left shadow-sm focus:border-sky focus:outline-none focus:ring-1 focus:ring-sky"
 					        aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label">
 						Easy Mode
 						<span class="text-xs text-gray-300">(sully yourself and jump to a limerick)</span>

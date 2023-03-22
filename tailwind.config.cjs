@@ -6,7 +6,8 @@ module.exports = {
     plugins: [],
     theme: {
         fontFamily: {
-            'logo': ['Nabla', ...defaultTheme.fontFamily.sans],
+            'logo': ['Bungee Shade', ...defaultTheme.fontFamily.sans],
+            'block': ['Flow Block', ...defaultTheme.fontFamily.sans],
             'sans': [...defaultTheme.fontFamily.sans],
             'serif': [...defaultTheme.fontFamily.serif],
             'mono': ['ui-monospace', 'SFMono-Regular', ...defaultTheme.fontFamily.mono]
