@@ -1,7 +1,7 @@
 <template>
-	<footer class="bg-white py-8 sm:py-4 lg:py-16">
-		<div class="mx-auto max-w-7xl  md:flex md:items-center md:justify-between lg:px-8">
-			<div class="flex justify-center items-center whitespace-nowrap space-x-6 md:order-2">
+	<footer class="bg-white/5">
+		<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 md:flex md:items-center md:justify-between">
+			<div class="flex justify-center items-center whitespace-nowrap space-x-6 md:order-2 py-8">
 
 				<a
 				  href="https://forms.gle/wRV5Cw1Y2qeVoTALA"

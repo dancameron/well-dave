@@ -1,5 +1,5 @@
 <template>
-	<div class="py-12">
+	<div class="pb-12">
 		<h1 v-if="currentQuestion.answered === 'skipped'"
 		    class="flex items-center space-x-4 mb-4 text-red-500">
 			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -12,7 +12,7 @@
 			  class="font-semibold leading-7 tracking-tight text-xl uppercase">No Worries, It's Just a Silly Game.</span>
 		</h1>
 		<header v-else
-		        class="sm:-mt-12 flex items-center space-x-3 mb-4 text-sky-500">
+		        class="flex items-center space-x-3 mb-4 text-sky-500">
 			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
 			     stroke="currentColor" class="w-8 h-8 text-sky-600">
 				<path stroke-linecap="round"
@@ -22,7 +22,7 @@
 		</header>
 		<div v-if="currentQuestion.omdb" class="sm:flex pb-8">
 			<div
-			  class="w-full sm:w-2/5 md:w-1/3 lg:w-1/4 overflow-hidden bg-gray-900">
+			  class="mx-auto sm:m-0 w-3/4 sm:w-2/5 md:w-1/3 lg:w-1/4 overflow-hidden bg-gray-900">
 				<div class="group relative rounded-xl group">
 					<img class="h-auto w-full rounded-lg"
 					     :src="currentQuestion.omdb.Poster"
@@ -115,7 +115,7 @@ export default {
 	},
 	methods: {
 		async getOmdb() {
-			let response = await fetch("http://www.omdbapi.com/?apikey=4caa9831&i=" + this.currentQuestion.imdbId)
+			let response = await fetch("http://www.omdbapi.com/?apikey=4caa9831&i=" + this.currentQuestion.imdbId.split('?')[0])
 			this.currentQuestion.omdb = await response.json()
 		},
 		nextQuestion() {
