@@ -1,28 +1,19 @@
 <template>
-	<footer class="bg-white">
-		<div class="mx-auto max-w-7xl my-4 md:flex md:items-center md:justify-between lg:px-8">
+	<footer class="bg-white py-8 sm:py-4 lg:py-16">
+		<div class="mx-auto max-w-7xl  md:flex md:items-center md:justify-between lg:px-8">
 			<div class="flex justify-center items-center whitespace-nowrap space-x-6 md:order-2">
 
-
-				<a href="https://audioboom.com/channels/4997224-the-filmcast-aka-the-slashfilmcast" target="_blank"
-				   class="flex flex-inline space-x-1 items-center text-gray-400 hover:text-gray-500">
+				<a
+				  href="https://forms.gle/wRV5Cw1Y2qeVoTALA"
+				  target="_blank"
+				  class="flex flex-inline space-x-1 items-center text-gray-400 hover:text-gray-500">
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
 					     stroke="currentColor" class="w-4 h-4">
 						<path stroke-linecap="round" stroke-linejoin="round"
-						      d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z"/>
+						      d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
 					</svg>
-					<span class="text-xs">Version {{ v }}</span>
+					<span class="text-xs">Submit Limerick</span>
 				</a>
-
-				<button v-on:click.prevent="restart"
-				        class="flex flex-inline space-x-1 items-center text-gray-400 hover:text-gray-500">
-					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-					     stroke="currentColor" class="w-4 h-4">
-						<path stroke-linecap="round" stroke-linejoin="round"
-						      d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"/>
-					</svg>
-					<span class="text-xs">Reboot</span>
-				</button>
 
 				<a
 				  :href="'https://github.com/dancameron/well-dave/issues/new?assignees=dancameron&labels=bug&template=typo-or-wrong-info-report.md&title=Info+for+'+currentQuestionId+'+is+Wrong'"
@@ -48,9 +39,25 @@
 
 			</div>
 
-			<div class="mt-8 md:order-1 md:mt-0">
-				<p class="text-center text-xs leading-5 text-gray-500">&copy; 2023 <a target="_blank" href="http://thefilmcast.com">The Film Cast</a>. All rights
-					reserved.</p>
+			<div class="flex justify-center items-center whitespace-nowrap space-x-6 md:order-1">
+				<a href="https://audioboom.com/channels/4997224-the-filmcast-aka-the-slashfilmcast" target="_blank"
+				   class="flex flex-inline space-x-1 items-center text-gray-400 hover:text-gray-500">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+					     stroke="currentColor" class="w-4 h-4">
+						<path stroke-linecap="round" stroke-linejoin="round"
+						      d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z"/>
+					</svg>
+					<span class="text-xs">Version {{ v }}</span>
+				</a>
+				<button v-on:click.prevent="restart"
+				        class="flex flex-inline space-x-1 items-center text-gray-400 hover:text-sky-500">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+					     stroke="currentColor" class="w-4 h-4">
+						<path stroke-linecap="round" stroke-linejoin="round"
+						      d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"/>
+					</svg>
+					<span class="text-xs">Reboot</span>
+				</button>
 			</div>
 
 		</div>

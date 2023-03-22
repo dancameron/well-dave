@@ -6,6 +6,7 @@ module.exports = {
     plugins: [],
     theme: {
         fontFamily: {
+            'logo': ['Nabla', ...defaultTheme.fontFamily.sans],
             'sans': [...defaultTheme.fontFamily.sans],
             'serif': [...defaultTheme.fontFamily.serif],
             'mono': ['ui-monospace', 'SFMono-Regular', ...defaultTheme.fontFamily.mono]
@@ -20,7 +21,7 @@ module.exports = {
             red: colors.red,
             orange: colors.orange,
             yellow: colors.yellow,
-            indigo: colors.indigo
+            sky: colors.sky
         },
         extend: {},
     }

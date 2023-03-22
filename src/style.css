@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Nabla';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nabla/v6/j8_l6-LI0Lvpe5kWu-_eFzl5.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.font-logo {
+    font-variation-settings: "EDPT" 200, "EHLT" 24;
+    font-palette: --custom;
+}
+
+@font-palette-values --custom {
+    font-family: Nabla;
+    override-colors:    0 #FFFFFF,
+                        1 #e6f0f6,
+                        2 #96b6ce,
+                        3 #e6f0f6,
+                        4 #d7e8f4,
+                        5 #d7e8f4,
+                        6 #0480bf,
+                        7 #0480bf,
+                        8 #d7e8f4,
+                        9 #FFFFFF;
+}

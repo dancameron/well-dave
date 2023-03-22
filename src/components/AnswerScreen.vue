@@ -1,7 +1,7 @@
 <template>
-	<div class="bg-gray-900">
+	<div class="py-12">
 		<h1 v-if="currentQuestion.answered === 'skipped'"
-		    class="lg:-mt-12 flex items-center space-x-4 mb-4 text-red-500">
+		    class="flex items-center space-x-4 mb-4 text-red-500">
 			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
 			     stroke="currentColor" class="w-6 h-6 text-red-600">
 				<path stroke-linecap="round" stroke-linejoin="round"
@@ -12,9 +12,9 @@
 			  class="font-semibold leading-7 tracking-tight text-xl uppercase">No Worries, It's Just a Silly Game.</span>
 		</h1>
 		<header v-else
-		        class="sm:-mt-12 flex items-center space-x-3 mb-4 text-indigo-500">
+		        class="sm:-mt-12 flex items-center space-x-3 mb-4 text-sky-500">
 			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-			     stroke="currentColor" class="w-8 h-8 text-indigo-600">
+			     stroke="currentColor" class="w-8 h-8 text-sky-600">
 				<path stroke-linecap="round"
 				      d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z"/>
 			</svg>
@@ -22,17 +22,17 @@
 		</header>
 		<div v-if="currentQuestion.omdb" class="sm:flex pb-8">
 			<div
-			  class="w-full sm:w-2/5 md:w-1/2 lg:w-1/3 overflow-hidden bg-gray-900">
+			  class="w-full sm:w-2/5 md:w-1/3 lg:w-1/4 overflow-hidden bg-gray-900">
 				<div class="group relative rounded-xl group">
 					<img class="h-auto w-full rounded-lg"
 					     :src="currentQuestion.omdb.Poster"
 					     :alt="currentQuestion.omdb.title">
-					<div class="absolute left-0 bottom-0 bg-gray-900/90 sm:bg-gray-900/70 w-full px-8 py-4 text-gray-500 group-hover:bg-gray-900/90 group-hover:text-gray-400">
+					<div class="absolute left-0 bottom-0 bg-gray-900/90 sm:bg-gray-900/80 w-full px-8 py-4 text-gray-400 group-hover:bg-gray-900/90 group-hover:text-gray-300">
 						<div class="mx-auto text-md font-serif tracking-tight"
 						     v-for="(line, index) in currentQuestion.limerick">
 							<span class="inline">{{ line }}</span> <span
 						  v-if="currentQuestion.limerick.length === index+1"
-						  class="inline text-indigo-400 italic">{{ limerickAnswer }}.</span>
+						  class="inline text-sky-400 italic">{{ limerickAnswer }}.</span>
 						</div>
 					</div>
 				</div>
@@ -45,7 +45,7 @@
 							"{{ currentQuestion.omdb.Title }}" {{ currentQuestion.omdb.Year }}
 						</div>
 						<div
-						  class="inline-flex whitespace-nowrap items-center rounded-full bg-gray-700 px-3 py-1 mt-2.5 text-xs font-medium text-indigo-400">
+						  class="inline-flex whitespace-nowrap items-center rounded-full bg-gray-700 px-3 py-1 mt-2.5 text-xs font-medium text-sky-400">
 							{{ currentQuestion.omdb.Rated }}
 						</div>
 					</div>
@@ -54,7 +54,7 @@
 					</div>
 					<div class="flex flex-row space-x-2 mt-2">
 									<span
-									  class="inline-flex items-center rounded-full bg-indigo-100 px-3 py-0.5 text-sm font-medium text-gray-800">{{
+									  class="inline-flex items-center rounded-full bg-sky-100 px-3 py-0.5 text-sm font-medium text-gray-800">{{
 											currentQuestion.omdb.Genre
 										}}</span>
 					</div>
@@ -87,7 +87,7 @@
 					<div class="mt-16">
 						<a href="#"
 						   v-on:click.prevent="nextQuestion"
-						   class="inline-flex rounded-md bg-indigo-600 px-3.5 py-2.5 text-lg font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Next</a>
+						   class="inline-flex rounded-md bg-sky-600 px-3.5 py-2.5 text-lg font-semibold text-white shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Next</a>
 					</div>
 				</div>
 			</div>
@@ -95,7 +95,7 @@
 		<template v-else>
 			<div class="flex items-center justify-center mt-32">
 				<div
-				  class="inline-block h-12 w-12 animate-spin rounded-full border-8 border-solid border-indigo-700 border-r-transparent align-[-0.125em] text-primary motion-reduce:animate-[spin_1.5s_linear_infinite]"
+				  class="inline-block h-12 w-12 animate-spin rounded-full border-8 border-solid border-sky-700 border-r-transparent align-[-0.125em] text-primary motion-reduce:animate-[spin_1.5s_linear_infinite]"
 				  role="status">
 					<span
 					  class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Loading...</span>

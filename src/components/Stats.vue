@@ -6,7 +6,7 @@
 			<div class="mx-auto mb-12 max-w-7xl sm:px-6">
 				<div
 				  class="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
-					<p class="-mt-8 mb-2 mx-auto max-w-2xl uppercase font-bold text-indigo-400">Total Score: <span
+					<p class="-mt-8 mb-2 mx-auto max-w-2xl uppercase font-bold text-sky-400">Total Score: <span
 					  class="font-thin">{{ totalScore }} points</span></p>
 
 					<h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">Thank you for
@@ -48,16 +48,16 @@
 				<div class="px-4 py-5 sm:p-6">
 					<dt class="text-base font-normal text-gray-900">Answered Correctly</dt>
 					<dd class="mt-1 flex items-center justify-between md:block lg:flex">
-						<div class="flex items-baseline text-2xl font-semibold text-indigo-600">
+						<div class="flex items-baseline text-2xl font-semibold text-sky-600">
 							{{ limericksAnswered }}
 							<span class="ml-2 text-sm font-medium text-gray-500">of {{ totalLimericksAttempted }}</span>
 						</div>
 
 						<div
-						  class="inline-flex items-baseline rounded-full px-3 py-1 text-sm font-medium bg-indigo-50 text-indigo-800 md:mt-2 lg:mt-0">
+						  class="inline-flex items-baseline rounded-full px-3 py-1 text-sm font-medium bg-sky-50 text-sky-800 md:mt-2 lg:mt-0">
 							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
 							     stroke="currentColor"
-							     class="-ml-1 mr-1 h-5 w-5 flex-shrink-0 self-center text-indigo-400">
+							     class="-ml-1 mr-1 h-5 w-5 flex-shrink-0 self-center text-sky-400">
 								<path stroke-linecap="round" stroke-linejoin="round"
 								      d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 019 9v.375M10.125 2.25A3.375 3.375 0 0113.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 013.375 3.375M9 15l2.25 2.25L15 12"/>
 							</svg>
@@ -132,7 +132,7 @@
 					<dd class="mt-1 flex items-center justify-between md:block lg:flex">
 
 						<div
-						  class="flex items-baseline text-2xl font-semibold text-indigo-600 mt-1">
+						  class="flex items-baseline text-2xl font-semibold text-sky-600 mt-1">
 							<span v-for="i in 5">
 								<svg v-if="isHalfStar(i)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
 								     stroke="currentColor"
