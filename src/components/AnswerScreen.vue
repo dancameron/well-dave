@@ -27,13 +27,25 @@
 					<img v-if="!showEmbed" class="h-auto w-full rounded-tr-lg rounded-tl-lg"
 					     :src="currentQuestion.omdb.Poster"
 					     :alt="currentQuestion.omdb.title">
-					<iframe v-if="showEmbed" width="100%" height="300"
-							        :src="'https://embeds.audioboom.com/posts/'+episodeId+'/embed/hero?player_theme=dark&t='+timeStamp"
-							        style="background-color: transparent; display: block; padding: 0; width: 100%; max-width: 700px;"
-							        frameborder="0" allowtransparency="allowtransparency" scrolling="no"
-							        title="Audioboom player" allow="autoplay"
-							        sandbox="allow-downloads allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"></iframe>
+					<div v-if="showEmbed"  class="relative">
+						<div class="absolute z-10 top-0 left-0 flex items-center justify-center">
+							<div
+							  class="inline-block h-12 w-12 animate-spin rounded-full border-8 border-solid border-sky-400 border-r-transparent align-[-0.125em] text-primary motion-reduce:animate-[spin_1.5s_linear_infinite]"
+							  role="status">
+								<span
+					                class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Loading...</span>
+							</div>
+						</div>
+						<iframe
+						    class="relative z-20"
+						    width="100%" height="300"
+					        :src="'https://embeds.audioboom.com/posts/'+episodeId+'/embed/hero?player_theme=dark&t='+timeStamp"
+					        style="background-color: transparent; display: block; padding: 0; width: 100%; max-width: 700px;"
+					        frameborder="0" allowtransparency="allowtransparency" scrolling="no"
+					        title="Audioboom player" allow="autoplay"
+					        sandbox="allow-downloads allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"></iframe>
 
+					</div>
 					<div
 					  v-on:click="showEmbed = true"
 					  class="cursor-pointer bg-gray-900/90 sm:bg-gray-900/80 w-full px-8 py-4 text-gray-400 group-hover:bg-gray-900/90 group-hover:text-gray-300">
@@ -45,7 +57,7 @@
 						</div>
 					</div>
 				</div>
-				</div>
+			</div>
 			<div class="flex-initial w-full sm:pl-12 sm:w-3/5">
 				<div class="sm:pl-6">
 					<div class="flex items-center space-x-4 mt-2">
@@ -69,7 +81,7 @@
 					</p>
 					<div class="mt-12">
 
-						<div class="inline-block py-2 px-4 text-sky-700 bg-sky-200 rounded-lg">
+						<div class="inline-block py-2 px-4 text-sky-700 bg-sky-200 hover:text-sky-800 hover:bg-sky-100 rounded-lg">
 							<div v-on:click="showEmbed = true"
 							     class="flex items-center cursor-pointer space-x-3">
 								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
