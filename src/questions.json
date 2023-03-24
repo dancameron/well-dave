@@ -970,12 +970,15 @@
   {
     "movie": "Eternals",
     "imdbId": "tt9032400",
-    "episodeTitle": "Ep. 643 - Eternals (GUEST: Katie Smith-Wong) (#1)",
+    "episodeTitle": "Ep. 643 - Eternals (GUEST: Katie Smith-Wong)",
     "audioboom": "https://audioboom.com/posts/7976066-ep-643-eternals-guest-katie-smith-wong",
     "timestamp": "1:09:21",
     "conversation": [
       {
         "limerick": true
+      },
+      {
+        "bonusLimerick": 1
       },
       {
         "person": "Dave",
@@ -1002,49 +1005,18 @@
       "Marvel movies don’t suck",
       "Until now, Eternals is"
     ],
+    "bonusLimericks": [
+      [
+        "I’m a Marvel zombie from way back",
+        "But even I am forced to that",
+        "It should be no surprise",
+        "After twenty-five tries",
+        "They were bound to eventually make crap."
+      ]
+    ],
     "answers": {
       "movie": "Eternals",
       "end": "bad"
-    }
-  },
-  {
-    "movie": "Eternals",
-    "imdbId": "tt9032400?alt2",
-    "episodeTitle": "Ep. 643 - Eternals (GUEST: Katie Smith-Wong) (#2)",
-    "audioboom": "https://audioboom.com/posts/7976066-ep-643-eternals-guest-katie-smith-wong",
-    "timestamp": "1:09:21",
-    "conversation": [
-      {
-        "limerick": true
-      },
-      {
-        "person": "Dave",
-        "quote": "OH MY GOD! WHAAAT! I am stunned. I need to like literally get up and walk around and think about this."
-      },
-      {
-        "person": "Devindra",
-        "quote": "Wow! Amazing."
-      },
-      {
-        "person": "Katie Smith-Wong",
-        "quote": "Wow!"
-      }
-    ],
-    "hints": [
-      "I will be as shocked as the other hosts at Jeff’s review if you can’t guess this movie.",
-      "In so many words (or, really one word) Jeff thought this movie was “not good”.",
-      "In so many more words (or, another word) Jeff thought this was “doo doo”."
-    ],
-    "limerick": [
-      "I’m a Marvel zombie from way back",
-      "But even I am forced to that",
-      "It should be no surprise",
-      "After twenty-five tries",
-      "They were bound to eventually make"
-    ],
-    "answers": {
-      "movie": "Eternals",
-      "end": "crap"
     }
   },
   {
@@ -1124,127 +1096,185 @@
     }
   },
   {
-    "incomplete": true,
     "movie": "Halloween Kills",
     "imdbId": "tt10665338",
     "episodeTitle": "Ep. 640 - Halloween Kills",
     "audioboom": "https://audioboom.com/posts/7963114-ep-640-halloween-kills",
-    "timestamp": "TS",
+    "timestamp": "1:11:51",
     "conversation": [
       {
         "limerick": true
       },
       {
         "person": "Dave",
-        "quote": "QUOTE"
+        "quote": "Wow."
       },
       {
         "person": "Devindra",
-        "quote": "QUOTE"
+        "quote": "Wow. It’s pretty good. I feel like that should go in your Gene Shalit list of limericks."
       }
     ],
     "hints": [
-      "HINTS"
+      "Devindra makes the classic point, when the villain is down,cut off his head. Stop just assuming he’s dead.",
+      "Once and for all, just do what the villain does and what the stinger verb in this title states. It’s not like Laurie hasn’t had her opportunities.",
+      "Spoiler for the ending: why would they have thought he’d die in fire just because he was “trapped” in the basement."
     ],
     "limerick": [
-      "LIMERICKLINES"
+      "There are enough fun and clever scenes",
+      "That deliver some dopamine",
+      "And the central conceit",
+      "Makes these tricks a treat",
+      "So I had a happy"
     ],
     "answers": {
       "movie": "Halloween Kills",
-      "end": "ANSWER"
+      "end": "Halloween"
     }
   },
   {
-    "incomplete": true,
     "movie": "No Time to Die",
     "imdbId": "tt2382320",
     "episodeTitle": "Ep. 639 - No Time to Die (GUEST: Phil Nobile Jr. from Fangoria)",
     "audioboom": "https://audioboom.com/posts/7959002-ep-639-no-time-to-die-guest-phil-nobile-jr-from-fangoria",
-    "timestamp": "TS",
+    "timestamp": "1:09:29",
     "conversation": [
       {
         "limerick": true
       },
       {
         "person": "Dave",
-        "quote": "QUOTE"
+        "quote": "OK…nicely done Jeff. That was very good."
       },
       {
         "person": "Devindra",
-        "quote": "QUOTE"
+        "quote": "Nicely done! I still don’t know where you end up on this movie actually."
       }
     ],
     "hints": [
-      "HINTS"
+      "With Daniel Craig’s final reprisal, it’s too bad now we won’t see the Benoit Blanc influence on future films in this franchise.",
+      "Ana de Armas was even in this one too. Kicking ass in a more literal way then she did in Knives Out.",
+      "This title was a lie, there was time to do “it” actually."
     ],
     "limerick": [
-      "LIMERICKLINES"
+      "The machinations of the plot are absurd",
+      "And in the end what I would have preferred",
+      "Is a few scenes ejected",
+      "So I’d be more connected",
+      "Cause I ended up shaken, not"
     ],
     "answers": {
       "movie": "No Time to Die",
-      "end": "ANSWER"
+      "end": "stirred"
     }
   },
   {
-    "incomplete": true,
     "movie": "Many Saints of Newark",
     "imdbId": "tt8110232",
     "episodeTitle": "Ep. 638 - Many Saints of Newark (GUEST: Matt Zoller Seitz from Rogerebert.com and Vulture)",
     "audioboom": "https://audioboom.com/posts/7954850-ep-638-many-saints-of-newark-guest-matt-zoller-seitz-from-rogerebert-com-and-vulture",
-    "timestamp": "TS",
+    "timestamp": "1:19:35",
     "conversation": [
       {
         "limerick": true
       },
       {
         "person": "Dave",
-        "quote": "QUOTE"
+        "quote": "What?! Hahaha. Wow, ok. My favorite was the different emphasis on the word prequel. Nicely done, nicely done."
       },
       {
         "person": "Devindra",
-        "quote": "QUOTE"
+        "quote": "Heeeeeyyyy!"
       }
     ],
     "hints": [
-      "HINTS"
+      "For that final word, remember, Jeff is a Marvel zombie from way back.",
+      "This movie was worthwhile even just as a casting exercise. The many younger versions of the Sopranos crew are divine.",
+      "The most TV episode of a movie you’ll ever see–the many scenes of old Newark."
     ],
     "limerick": [
-      "LIMERICKLINES"
+      "I need a prequel to Sopranos",
+      "Like I need a pool filled with pianos",
+      "Or so I thought",
+      "Cause what I got",
+      "Was as fun as a film about"
     ],
     "answers": {
       "movie": "Many Saints of Newark",
-      "end": "ANSWER"
+      "end": "Thanos"
     }
   },
   {
-    "incomplete": true,
-    "movie": "Candyman",
-    "imdbId": "tt9347730",
-    "episodeTitle": "Ep. 637 - Candyman (2021) and Free Guy (GUEST: Daanish Syed)",
+    "movie": "Free Guy",
+    "imdbId": "tt6264654",
+    "episodeTitle": "Ep. 637 - ... Free Guy (GUEST: Daanish Syed)",
     "audioboom": "https://audioboom.com/posts/7951319-ep-637-candyman-2021-and-free-guy-guest-daanish-syed",
-    "timestamp": "TS",
+    "timestamp": "1:32:53",
     "conversation": [
       {
         "limerick": true
       },
       {
         "person": "Dave",
-        "quote": "QUOTE"
+        "quote": "Alright"
       },
       {
-        "person": "Devindra",
-        "quote": "QUOTE"
+        "person": "Daanish Syed",
+        "quote": "Hmmm."
       }
     ],
     "hints": [
-      "HINTS"
+      "This is basically a live action “The Lego Movie”. Ryan Reynolds is playing his version of Chris Pratt’s Emmet.",
+      "It’s a video game movie, not a movie based on a video game, which is maybe why it works.",
+      "Taika Waititi’s antagonist is a polarizing performance."
     ],
     "limerick": [
-      "LIMERICKLINES"
+      "It’s got enough fun going on",
+      "That there was never a time when I yawned",
+      "But it doesn’t quite soar",
+      "You don’t get a high score",
+      "Mashing up Lego Movie and"
+    ],
+    "answers": {
+      "movie": [
+        "Free Guy"
+      ],
+      "end": "Tron"
+    }
+  },
+  {
+    "movie": "Candyman",
+    "imdbId": "tt9347730",
+    "episodeTitle": "Ep. 637 - Candyman (2021) ... (GUEST: Daanish Syed)",
+    "audioboom": "https://audioboom.com/posts/7951319-ep-637-candyman-2021-and-free-guy-guest-daanish-syed",
+    "timestamp": "52:47",
+    "conversation": [
+      {
+        "limerick": true
+      },
+      {
+        "person": "Dave",
+        "quote": "Alright"
+      },
+      {
+        "person": "Daanish Syed",
+        "quote": "Hmmm."
+      }
+    ],
+    "hints": [
+      "Don’t say this movie title in front of a mirror.",
+      "The sweet nickname hides a horrifying backstory.",
+      "The reality in this fiction is what’s most scary."
+    ],
+    "limerick": [
+      "The titular adversary",
+      "Is depicted a bit contrary",
+      "To what I expect",
+      "Which made me reflect",
+      "But it ends up not being too"
     ],
     "answers": {
       "movie": "Candyman",
-      "end": "ANSWER"
+      "end": "scary"
     }
   },
   {
@@ -1909,7 +1939,7 @@
         "limerick": true
       },
       {
-        "bonusLimericks": true
+        "bonusLimerick": 1
       },
       {
         "person": "Dave",
@@ -3015,7 +3045,7 @@
   {
     "movie": "Avatar: The Way Of Water",
     "imdbId": "tt1630029",
-    "episodeTitle": "Ep. 700 - Avatar: The Way of Water (#1)",
+    "episodeTitle": "Ep. 700 - Avatar: The Way of Water",
     "audioboom": "https://audioboom.com/posts/8214728-ep-700-avatar-the-way-of-water",
     "timestamp": "34:37",
     "conversation": [
@@ -3029,38 +3059,9 @@
       {
         "person": "Devindra",
         "quote": "I don’t know about rewriting history here, but ok."
-      }
-    ],
-    "hints": [
-      "It should be an easy one to get the movie.",
-      "Extra points for getting the title exactly."
-    ],
-    "limerick": [
-      "This room has an unmentioned elephant",
-      "It’s the notion of cultural relevance",
-      "This sequel’s so good",
-      "It rightfully should",
-      "Make that question itself"
-    ],
-    "answers": {
-      "movie": [
-        "Avatar: The Way of Water",
-        "Avatar 2",
-        "Avatar Way of Water",
-        "Avatar The Way of Water"
-      ],
-      "end": "irrelevant"
-    }
-  },
-  {
-    "movie": "Avatar: The Way Of Water",
-    "imdbId": "tt1630029?alt2",
-    "episodeTitle": "Ep. 700 - Avatar: The Way of Water (#2)",
-    "audioboom": "https://audioboom.com/posts/8214728-ep-700-avatar-the-way-of-water",
-    "timestamp": "34:37",
-    "conversation": [
+      },
       {
-        "limerick": true
+        "bonusLimerick": 1
       },
       {
         "person": "Dave",
@@ -3069,38 +3070,9 @@
       {
         "person": "Devindra",
         "quote": "My new god is named Cameron…"
-      }
-    ],
-    "hints": [
-      "It should be an easy one to get the movie.",
-      "Extra points for getting the title exactly."
-    ],
-    "limerick": [
-      "To those who expected this faster",
-      "Thinking every delay meant disaster",
-      "Your schadenfreude",
-      "Just got destroyed",
-      "Behold, a filmmaking"
-    ],
-    "answers": {
-      "movie": [
-        "Avatar: The Way of Water",
-        "Avatar 2",
-        "Avatar Way of Water",
-        "Avatar The Way of Water"
-      ],
-      "end": "master"
-    }
-  },
-  {
-    "movie": "Avatar: The Way Of Water",
-    "imdbId": "tt1630029?alt3",
-    "episodeTitle": "Ep. 700 - Avatar: The Way of Water (#3)",
-    "audioboom": "https://audioboom.com/posts/8214728-ep-700-avatar-the-way-of-water",
-    "timestamp": "34:37",
-    "conversation": [
+      },
       {
-        "limerick": true
+        "bonusLimerick": 2
       },
       {
         "person": "Dave",
@@ -3114,14 +3086,30 @@
     "hints": [
       "It should be an easy one to get the movie.",
       "Extra points for getting the title exactly.",
-      "Ask your grade school English teacher for help on the last word."
+      "Sequel to thee culturally relevant movie."
     ],
     "limerick": [
-      "Telling Dave there’s no ‘the’ was farcical",
-      "And watching him squirm was cathartic, well",
-      "The Way of Water",
-      "Could not have gone harder",
-      "It earned its definitive"
+      "This room has an unmentioned elephant",
+      "It’s the notion of cultural relevance",
+      "This sequel’s so good",
+      "It rightfully should",
+      "Make that question itself"
+    ],
+    "bonusLimericks": [
+      [
+        "To those who expected this faster",
+        "Thinking every delay meant disaster",
+        "Your schadenfreude",
+        "Just got destroyed",
+        "Behold, a filmmaking master"
+      ],
+      [
+        "Telling Dave there’s no ‘the’ was farcical",
+        "And watching him squirm was cathartic, well",
+        "The Way of Water",
+        "Could not have gone harder",
+        "It earned its definitive article"
+      ]
     ],
     "answers": {
       "movie": [
@@ -3130,7 +3118,7 @@
         "Avatar Way of Water",
         "Avatar The Way of Water"
       ],
-      "end": "article"
+      "end": "irrelevant"
     }
   },
   {

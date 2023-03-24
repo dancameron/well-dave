@@ -32,9 +32,9 @@
 
 			<div class="min-w-0 flex-1">
 				<div>
-					<div class="text-xs font-bold text-gray-400 group-hover:text-gray-800">{{ quote.person }}</div>
+					<div class="text-xs font-bold text-gray-500 group-hover:text-gray-800">{{ quote.person }}</div>
 				</div>
-				<div class="text-sm text-gray-400 group-hover:text-gray-800">
+				<div class="text-sm text-gray-500 group-hover:text-gray-800">
 					<p>{{ quote.quote }}</p>
 				</div>
 			</div>

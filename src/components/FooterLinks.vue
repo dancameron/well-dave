@@ -1,5 +1,5 @@
 <template>
-	<footer class="bg-white/5">
+	<footer class="bg-white/5 pb-16">
 		<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 md:flex md:items-center md:justify-between">
 			<div class="flex justify-center items-center whitespace-nowrap space-x-6 md:order-2 py-8">
 

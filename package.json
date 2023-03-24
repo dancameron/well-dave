@@ -1,7 +1,7 @@
 {
   "name": "well-dave",
   "private": true,
-  "version": "Ep.711e",
+  "version": "Ep.711f",
   "type": "module",
   "scripts": {
     "dev": "vite --host",
