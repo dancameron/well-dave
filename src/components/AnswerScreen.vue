@@ -22,12 +22,21 @@
 		</header>
 		<div v-if="currentQuestion.omdb" class="sm:flex pb-8">
 			<div
-			  class="mx-auto sm:m-0 w-3/4 sm:w-2/5 md:w-1/3 lg:w-1/4 overflow-hidden bg-gray-900">
-				<div class="group relative rounded-xl group">
-					<img class="h-auto w-full rounded-lg"
+			  class="mx-auto sm:m-0 w-3/4 sm:w-2/5 md:w-1/3 lg:w-1/4 overflow-hidden">
+				<div class="group rounded-xl group">
+					<img v-if="!showEmbed" class="h-auto w-full rounded-tr-lg rounded-tl-lg"
 					     :src="currentQuestion.omdb.Poster"
 					     :alt="currentQuestion.omdb.title">
-					<div class="absolute left-0 bottom-0 bg-gray-900/90 sm:bg-gray-900/80 w-full px-8 py-4 text-gray-400 group-hover:bg-gray-900/90 group-hover:text-gray-300">
+					<iframe v-if="showEmbed" width="100%" height="300"
+							        :src="'https://embeds.audioboom.com/posts/'+episodeId+'/embed/hero?player_theme=dark&t='+timeStamp"
+							        style="background-color: transparent; display: block; padding: 0; width: 100%; max-width: 700px;"
+							        frameborder="0" allowtransparency="allowtransparency" scrolling="no"
+							        title="Audioboom player" allow="autoplay"
+							        sandbox="allow-downloads allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"></iframe>
+
+					<div
+					  v-on:click="showEmbed = true"
+					  class="cursor-pointer bg-gray-900/90 sm:bg-gray-900/80 w-full px-8 py-4 text-gray-400 group-hover:bg-gray-900/90 group-hover:text-gray-300">
 						<div class="mx-auto text-md font-serif tracking-tight"
 						     v-for="(line, index) in currentQuestion.limerick">
 							<span class="inline">{{ line }}</span> <span
@@ -36,7 +45,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+				</div>
 			<div class="flex-initial w-full sm:pl-12 sm:w-3/5">
 				<div class="sm:pl-6">
 					<div class="flex items-center space-x-4 mt-2">
@@ -49,46 +58,64 @@
 							{{ currentQuestion.omdb.Rated }}
 						</div>
 					</div>
-					<div class="mt-2 text-lg tracking-tight text-gray-400">Director
+					<div class="mt-2 text-lg tracking-tight text-sky-300">Director:
 						{{ currentQuestion.omdb.Director }}
 					</div>
-					<div class="flex flex-row space-x-2 mt-2">
-									<span
-									  class="inline-flex items-center rounded-full bg-sky-100 px-3 py-0.5 text-sm font-medium text-gray-800">{{
-											currentQuestion.omdb.Genre
-										}}</span>
-					</div>
-					<p class="mt-6 text-base leading-7 text-gray-300">
-						{{ currentQuestion.omdb.Plot }}</p>
-					<div class="mt-4 text-gray-300">
-						<a target="_blank" :href="currentQuestion.audioboom"
-						   class="flex items-center space-x-2">
-							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-							     stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-								<path stroke-linecap="round" stroke-linejoin="round"
-								      d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"/>
-							</svg>
-							<span class="text-sm">
-							{{ currentQuestion.episodeTitle }}
-							<div class="flex items-center space-x-1 text-xs text-gray-400">
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-								     stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
-									<path stroke-linecap="round" stroke-linejoin="round"
-									      d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
-								</svg>
-								<span>
-									{{ currentQuestion.timestamp }}
-								</span>
-							</div>
-						</span>
-						</a>
+					<p class="mt-2 text-base leading-7 text-gray-300">
+						{{ currentQuestion.omdb.Plot }}
+					</p>
+					<p class="text-sm font-medium text-gray-500">
+						{{ currentQuestion.omdb.Genre }}
+					</p>
+					<div class="mt-12">
 
+						<div class="inline-block py-2 px-4 text-sky-700 bg-sky-200 rounded-lg">
+							<div v-on:click="showEmbed = true"
+							     class="flex items-center cursor-pointer space-x-3">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+								     stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+									<path stroke-linecap="round" stroke-linejoin="round"
+									      d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"/>
+								</svg>
+								<div class="text-sm">
+									<b v-if="!showEmbed">Click to Listen</b>
+									<b v-else>Listening...</b><br/>
+
+									<div class="flex items-center space-x-2">
+										<div class="flex items-center text-xs">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+											     stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
+												<path stroke-linecap="round" stroke-linejoin="round"
+												      d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z"/>
+											</svg>
+											<span>
+											{{ currentQuestion.episodeTitle }}
+										</span>
+										</div>
+										<div class="flex items-center text-xs">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+											     stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
+												<path stroke-linecap="round" stroke-linejoin="round"
+												      d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+											</svg>
+											<span>
+										{{ currentQuestion.timestamp }}
+									</span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+
+						<div class="mt-12">
+							<a href="#"
+							   v-on:click.prevent="nextQuestion"
+							   class="inline-flex rounded-md bg-sky-600 px-3.5 py-3 text-lg font-semibold text-white shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Next</a>
+						</div>
 					</div>
-					<div class="mt-16">
-						<a href="#"
-						   v-on:click.prevent="nextQuestion"
-						   class="inline-flex rounded-md bg-sky-600 px-3.5 py-2.5 text-lg font-semibold text-white shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Next</a>
-					</div>
+
 				</div>
 			</div>
 		</div>
@@ -107,6 +134,11 @@
 <script>
 export default {
 	name: 'AnswerScreen',
+	data() {
+		return {
+			showEmbed: false
+		}
+	},
 	props: {
 		currentQuestion: {}
 	},
@@ -128,7 +160,17 @@ export default {
 				return this.currentQuestion.answers.end[0]
 			}
 			return this.currentQuestion.answers.end
+		},
+		episodeId() {
+			// example https://audioboom.com/posts/7976066-ep-643-eternals-guest-katie-smith-wong
+			console.log(this.currentQuestion.audioboom.match(new RegExp("audioboom.com/posts/(.*)-ep-")))
+			return this.currentQuestion.audioboom.match(new RegExp("audioboom.com/posts/(.*)-ep-"))[1];
+		},
+		timeStamp() {
+			const [hours, minutes, seconds] = this.currentQuestion.timestamp.split(':');
+			return Number(hours) * 60 * 60 + Number(minutes) * 60 + Number(seconds);
 		}
+
 	}
 }
 </script>

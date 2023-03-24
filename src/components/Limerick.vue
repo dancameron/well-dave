@@ -98,6 +98,7 @@
 		</div>
 		<div
 		  class="w-auto -ml-8 sm:ml-0 lg:max-w-1/5 xl:w-1/3 mt-4 lg:mt-0 rounded-sm text-xs">
+
 			<div class="pl-8 group">
 				<ul class="text-gray-500 flex flex-col mx-auto divide-y divide-dashed">
 					<li v-for="(hint, index) in currentQuestion.hints" class="py-2 flex items-baseline space-x-3 cursor-zoom-in">

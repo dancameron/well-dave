@@ -12,7 +12,7 @@
 
 			<div class="min-w-0 flex-1">
 				<div class="min-w-0 flex-1 cursor-pointer" v-on:click="display = !display">
-					<div class="-mt-0.5 -ml-6 mb-5 py-2 px-5 inline-block text-xs text-sky-400 font-sans bg-sky-50 rounded-2xl">
+					<div class="-mt-0.5 -ml-6 mb-5 py-2 px-5 inline-block text-xs text-sky-400 font-sans bg-sky-50 rounded-full">
 						<span class="flex flex-shrink space-x-2 items-center">
 							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
 							     stroke="currentColor" class="w-5 h-5 text-sky-200">
