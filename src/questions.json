@@ -1,74 +1,130 @@
 [
   {
-    "incomplete": true,
-    "movie": "The Fabelmans",
-    "imdbId": "tt14208870",
-    "episodeTitle": "Ep. 698 - The Fabelmans",
-    "audioboom": "https://audioboom.com/posts/8204282-ep-698-the-fabelmans",
-    "timestamp": "TS",
+    "movie": "Godzilla vs. Kong",
+    "imdbId": "tt5034838",
+    "episodeTitle": "Ep. 613 - Godzilla vs. Kong (GUEST: Max Evry from ComingSoon.net)",
+    "audioboom": "https://audioboom.com/posts/7838233-ep-613-godzilla-vs-kong-guest-max-evry-from-comingsoon-net",
+    "timestamp": "1:09:28",
     "conversation": [
       {
         "limerick": true
       },
       {
         "person": "Dave",
-        "quote": "QUOTE"
+        "quote": "Haha, that was very good Jeff."
       },
       {
         "person": "Devindra",
-        "quote": "QUOTE"
+        "quote": "Yes!!! I like that one!"
+      },
+      {
+        "bonusLimerick": 1
+      },
+      {
+        "person": "Dave",
+        "quote": "Haha.Pretty good Jeff, pretty good. Yeah, nicely done."
+      },
+      {
+        "person": "Devindra",
+        "quote": "The monster cut. Give me the monster cut."
       }
     ],
     "hints": [
-      "HINTS"
+      "The giant lizard vs. the giant ape movie",
+      "Apparently this is part of the capital M “Monsterverse”.",
+      "The big lizard or the big ape, whoever wins, we lose."
     ],
     "limerick": [
-      "LIMERICKLINES"
+      "If you happen to be on the fence",
+      "The scale of the action’s immense",
+      "And you might get a grin",
+      "If you know going in",
+      "That none of this bullshit makes"
+    ],
+    "answers": {
+      "movie": [
+        "Godzilla vs. Kong",
+        "Godzilla v Kong",
+        "Godzilla Kong"
+      ],
+      "end": "sense"
+    }
+  },
+  {
+    "movie": "The Fabelmans",
+    "imdbId": "tt14208870",
+    "episodeTitle": "Ep. 698 - The Fabelmans",
+    "audioboom": "https://audioboom.com/posts/8204282-ep-698-the-fabelmans",
+    "timestamp": "1:22:15",
+    "conversation": [
+      {
+        "limerick": true
+      },
+      {
+        "person": "Dave",
+        "quote": "[clapping] Did you just rhyme ‘and’, ‘fam’, and ‘man’, I think is what happened just now?"
+      },
+      {
+        "person": "Devindra",
+        "quote": "Yeah. Yup. [Jeff] knows what he’s doing."
+      }
+    ],
+    "hints": [
+      "So close to the title and final word(s) giving you a single answer to this one.",
+      "The Steven Spielberg movie about Steven Spielberg.",
+      "It’s so clearly autobiographical, Spielberg also has a writing credit."
+    ],
+    "limerick": [
+      "Dissecting what is a stable fam",
+      "Directed like only he’s able, and",
+      "Though it contains",
+      "Great stuff it remains",
+      "Feeling too much like a fable"
     ],
     "answers": {
       "movie": [
         "The Fabelmans",
         "Fabelmans"
       ],
-      "end": "ANSWER"
+      "end": "man"
     }
   },
   {
-    "incomplete": true,
     "movie": "The Menu",
     "imdbId": "tt9764362",
     "episodeTitle": "Ep. 697 - The Menu",
     "audioboom": "https://audioboom.com/posts/8200554-ep-697-the-menu",
-    "timestamp": "TS",
+    "timestamp": "1:26:26",
     "conversation": [
       {
         "limerick": true
       },
       {
         "person": "Dave",
-        "quote": "QUOTE"
-      },
-      {
-        "person": "Devindra",
-        "quote": "QUOTE"
+        "quote": "Mmmm, nicely done but it doesn’t sound like you liked the movie that much."
       }
     ],
     "hints": [
-      "HINTS"
+      "This restaurant–and film–experience is to die for.",
+      "To agree with Devindra, Ralph Fienes is basically doing “what if Voldemort was a celebrity chef with a Michelin star restaurant.",
+      "Apparently this is based in part on a real restaurant (that Dave has been too) which is terrifying."
     ],
     "limerick": [
-      "LIMERICKLINES"
+      "It is delightful deviant",
+      "Watching the rich be obedient",
+      "As a foodie it’s fun",
+      "But the end’s missing one",
+      "Significant final"
     ],
     "answers": {
       "movie": [
         "The Menu",
         "Menu"
       ],
-      "end": "ANSWER"
+      "end": "ingredient"
     }
   },
   {
-    "incomplete": true,
     "movie": "Black Panther: Wakanda Forever",
     "imdbId": "tt9114286",
     "episodeTitle": "Ep. 696 - Black Panther: Wakanda Forever",
@@ -80,125 +136,137 @@
       },
       {
         "person": "Dave",
-        "quote": "QUOTE"
+        "quote": "Hmmm, alright."
       },
       {
         "person": "Devindra",
-        "quote": "QUOTE"
+        "quote": "Ooooh, ok good."
       }
     ],
     "hints": [
-      "HINTS"
+      "The world, and this movie, is really missing Chadwick Boseman.",
+      "Understandable if your mind is racing, the final word challenge is bracing.",
+      "It rhymes with those words too. Jeff’s critique was about how the story moved, with start and stops."
     ],
     "limerick": [
-      "LIMERICKLINES"
+      "There’s certainly no replacing",
+      "Chadwick, so it’s amazing",
+      "A Black Panther Film",
+      "Is still good without him",
+      "I just wish it had better"
     ],
     "answers": {
       "movie": [
         "Black Panther: Wakanda Forever",
         "Black Panther Wakanda Forever"
       ],
-      "end": "ANSWER"
+      "end": "pacing"
     }
   },
   {
-    "incomplete": true,
     "movie": "The Banshees of Inisherin",
     "imdbId": "tt11813216",
     "episodeTitle": "Ep. 695 - The Banshees of Inisherin",
     "audioboom": "https://audioboom.com/posts/8189378-ep-695-the-banshees-of-inisherin",
-    "timestamp": "TS",
+    "timestamp": "1:18:14",
     "conversation": [
       {
         "limerick": true
       },
       {
         "person": "Dave",
-        "quote": "QUOTE"
+        "quote": "Hahahaha!"
       },
       {
         "person": "Devindra",
-        "quote": "QUOTE"
+        "quote": "Hahahaha!"
       }
     ],
     "hints": [
-      "HINTS"
+      "Colin Farrell and Brenden Gleeson are totally believable as best friends who don’t really like each other.",
+      "Is this one of the most Irish movies ever made?",
+      "Ireland has never looked better on screen."
     ],
     "limerick": [
-      "LIMERICKLINES"
+      "I was already that script",
+      "When a policeman gave Colin a fat lip",
+      "Dave Chen said it right",
+      "This odd friendship fight",
+      "Is true Jeff Cannata cat"
     ],
     "answers": {
       "movie": [
         "The Banshees of Inisherin",
         "Banshees of Inisherin"
       ],
-      "end": "ANSWER"
+      "end": "nip"
     }
   },
   {
-    "incomplete": true,
     "movie": "Decision to Leave",
     "imdbId": "tt12477480",
     "episodeTitle": "Ep. 694 - Decision To Leave",
     "audioboom": "https://audioboom.com/posts/8185653-ep-694-decision-to-leave",
-    "timestamp": "TS",
+    "timestamp": "1:17:00",
     "conversation": [
       {
         "limerick": true
       },
       {
         "person": "Dave",
-        "quote": "QUOTE"
-      },
-      {
-        "person": "Devindra",
-        "quote": "QUOTE"
+        "quote": "Hmm, ok, alright."
       }
     ],
     "hints": [
-      "HINTS"
+      "Jeff didn’t love this film but decided to stay with it instead of leaving.",
+      "Each host actually tried some version of that joke about their decision NOT to leave this movie.",
+      "It is a noir with every shot meticulously crafted."
     ],
     "limerick": [
-      "LIMERICKLINES"
+      "In this film Park Chan-wook has employed",
+      "Techniques that excite celluloid",
+      "But it failed to enthrall",
+      "It’s a film overall",
+      "I admired much more than"
     ],
     "answers": {
       "movie": "Decision to Leave",
-      "end": "ANSWER"
+      "end": "enjoyed"
     }
   },
   {
-    "incomplete": true,
     "movie": "Black Adam",
     "imdbId": "tt6443346",
     "episodeTitle": "Ep. 693 - Black Adam",
     "audioboom": "https://audioboom.com/posts/8180797-ep-693-black-adam",
-    "timestamp": "TS",
+    "timestamp": "1:27:06",
     "conversation": [
       {
         "limerick": true
       },
       {
         "person": "Dave",
-        "quote": "QUOTE"
-      },
-      {
-        "person": "Devindra",
-        "quote": "QUOTE"
+        "quote": "Hahaha, ok. Haha, so it’s fifteen minutes of a good movie is what you’re saying?"
       }
     ],
     "hints": [
-      "HINTS"
+      "The hierarchy of power in the DCU was definitely shifted in this film, but not how The Rock wanted, I think.",
+      "Another black mark on The Rock’s filmography. Is it ok to say he makes bad movies.",
+      "How many DC characters have lightning bolts on their chest and are any of them capable of making a good movie?"
     ],
     "limerick": [
-      "LIMERICKLINES"
+      "Fifteen years later they had him",
+      "In the role of the hero Black Adam",
+      "And the final product",
+      "Undoubtedly sucks",
+      "But somehow I can’t stay mad at"
     ],
     "answers": {
       "movie": "Black Adam",
-      "end": "ANSWER"
+      "end": "him"
     }
   },
   {
-    "incomplete": true,
     "movie": "Amsterdam",
     "imdbId": "tt10304142",
     "episodeTitle": "Ep. 691 - Amsterdam",
@@ -214,7 +282,9 @@
       }
     ],
     "hints": [
-      "HINTS"
+      "David O. Russell casts Margot Robbie, Christian Bale, John David Washington, Chris Rock, Timothy Olyphant, Zoe Saldana, Mike Myers, Taylor Swift, and Robert De Niro, to name a few.",
+      "This film is also a popular European city to visit, so maybe the massive ensemble makes sense.",
+      "Interesting decision to make a whodunnit where you don’t really care who, in fact, dunnit."
     ],
     "limerick": [
       "A great cast gives you a head start",
@@ -229,7 +299,6 @@
     }
   },
   {
-    "incomplete": true,
     "movie": "Three Thousand Years of Longing",
     "imdbId": "tt9198364",
     "episodeTitle": "Ep. 686 - Three Thousand Years of Longing",
@@ -249,7 +318,9 @@
       }
     ],
     "hints": [
-      "HINTS"
+      "Based on a short story The Djinn in the Nightingale's Eye by A. S. Byatt.",
+      "Three thousand wishes were not granted.",
+      "Idris Elba is not a blue in his depiction of a wish granter."
     ],
     "limerick": [
       "The visual and auditory",
@@ -264,7 +335,6 @@
     }
   },
   {
-    "incomplete": true,
     "movie": "Bodies, Bodies, Bodies",
     "imdbId": "tt8110652",
     "episodeTitle": "Ep. 684 - Bodies, Bodies, Bodies",
@@ -284,7 +354,9 @@
       }
     ],
     "hints": [
-      "HINTS"
+      "One Word. Three Times.",
+      "With the latter's consent, Pete Davidson actually punched Lee Pace during the tequila slaps scene.",
+      "The name of the movie and the game played in the movie are based on a commonly played Improv Game called Body Body (or Murder In The Dark)."
     ],
     "limerick": [
       "It’s so much more fun than it seems.",
@@ -498,7 +570,7 @@
     "imdbId": "tt11245972",
     "episodeTitle": "Ep. 659 - Scream (GUEST: Jordan Crucchiola from Feeling Seen)",
     "audioboom": "https://audioboom.com/posts/8040508-ep-659-scream-guest-jordan-crucchiola-from-feeling-seen",
-    "timestamp": "44:41",
+    "timestamp": "0:44:41",
     "conversation": [
       {
         "limerick": true
@@ -532,6 +604,8 @@
       "movie": [
         "Scream (2022)",
         "Scream",
+        "Scream 5",
+        "Scream V",
         "Scream 2022"
       ],
       "end": "mystery"
@@ -682,7 +756,7 @@
       "Or maybe he’s his own culprit",
       "Either way it’s no use",
       "The film is obtuse",
-      "I bleak and frustrating"
+      "A bleak and frustrating"
     ],
     "answers": {
       "movie": "A Hero",
@@ -885,7 +959,6 @@
     }
   },
   {
-    "incomplete": true,
     "movie": "Ghostbusters: Afterlife",
     "imdbId": "tt4513678",
     "episodeTitle": "Ep. 645 - Ghostbusters: Afterlife (GUEST: Dan Murrell)",
@@ -978,11 +1051,8 @@
         "limerick": true
       },
       {
-        "bonusLimerick": 1
-      },
-      {
         "person": "Dave",
-        "quote": "OH MY GOD! WHAAAT! I am stunned. I need to like literally get up and walk around and think about this."
+        "quote": "OH MY GOD!"
       },
       {
         "person": "Devindra",
@@ -991,6 +1061,21 @@
       {
         "person": "Katie Smith-Wong",
         "quote": "Wow!"
+      },
+      {
+        "person": "Jeff",
+        "quote": "I have another. This was my first draft."
+      },
+      {
+        "bonusLimerick": 1
+      },
+      {
+        "person": "Dave",
+        "quote": "WHAAAT! I am stunned. I need to like literally get up and walk around and think about this."
+      },
+      {
+        "person": "Devindra",
+        "quote": "Yeah seriously."
       }
     ],
     "hints": [
@@ -1246,7 +1331,7 @@
     "imdbId": "tt9347730",
     "episodeTitle": "Ep. 637 - Candyman (2021) ... (GUEST: Daanish Syed)",
     "audioboom": "https://audioboom.com/posts/7951319-ep-637-candyman-2021-and-free-guy-guest-daanish-syed",
-    "timestamp": "52:47",
+    "timestamp": "0:52:47",
     "conversation": [
       {
         "limerick": true
@@ -1278,320 +1363,299 @@
     }
   },
   {
-    "incomplete": true,
     "movie": "Come From Away",
     "imdbId": "tt7638556",
     "episodeTitle": "Ep. 636 - Come From Away (GUEST: Kendra James)",
     "audioboom": "https://audioboom.com/posts/7946033-ep-636-come-from-away-guest-kendra-james",
-    "timestamp": "TS",
+    "timestamp": "1:32:29",
     "conversation": [
       {
         "limerick": true
       },
       {
         "person": "Dave",
-        "quote": "QUOTE"
+        "quote": "Nice. I’m glad you liked it Jeff."
       },
       {
         "person": "Devindra",
-        "quote": "QUOTE"
+        "quote": "Yay."
+      },
+      {
+        "person": "Kendra James",
+        "quote": "Oooooh."
       }
     ],
     "hints": [
-      "HINTS"
+      "The rare Filmcast review of a live (filmed) performance. And also a musical!",
+      "You come from anywhere and enjoy this movie.",
+      "This is one of those amazing stories behind the story (in this case, 9/11)."
     ],
     "limerick": [
-      "LIMERICKLINES"
+      "To think of so many displaced",
+      "Resulting in kindness and grace",
+      "Is inspiring to me",
+      "As much as to see",
+      "A performance of such thrilling"
     ],
     "answers": {
-      "movie": [
-        "Come From Away"
-      ],
-      "end": "ANSWER"
+      "movie": "Come From Away",
+      "end": "pace"
     }
   },
   {
-    "incomplete": true,
     "movie": "Malignant",
     "imdbId": "tt3811906",
     "episodeTitle": "Ep. 635 - Malignant (GUEST: Ariel Fisher from Fangoria)",
     "audioboom": "https://audioboom.com/posts/7942020-ep-635-malignant-guest-ariel-fisher-from-fangoria",
-    "timestamp": "TS",
+    "timestamp": "1:47:31",
     "conversation": [
       {
         "limerick": true
       },
       {
         "person": "Dave",
-        "quote": "QUOTE"
+        "quote": "Wow! I don’t know if you know this Jeff, but you used the term…you rhymed the word “bad” several times with itself."
       },
       {
         "person": "Devindra",
-        "quote": "QUOTE"
+        "quote": "Jeff does not watch enough B movies."
+      },
+      {
+        "person": "Ariel Fisher",
+        "quote": "Oh-ho-ho!"
       }
     ],
     "hints": [
-      "HINTS"
+      "Funny that the title of this movie is a synonym for/shares a root word with bad.",
+      "James Wan wanted to take chances with this one. It didn’t work for everyone."
     ],
     "limerick": [
-      "LIMERICKLINES"
+      "When a movie’s writing is bad",
+      "And the acting and lighting are bad",
+      "If the concept is clever",
+      "It’s no help whatsoever",
+      "The end product is still really"
     ],
     "answers": {
       "movie": "Malignant",
-      "end": "ANSWER"
+      "end": "bad"
     }
   },
   {
-    "incomplete": true,
     "movie": "Shang-Chi and the Legend of the Ten Rings",
     "imdbId": "tt9376612",
     "episodeTitle": "Ep. 634 - Shang-Chi and the Legend of the Ten Rings",
     "audioboom": "https://audioboom.com/posts/7937220-ep-634-shang-chi-and-the-legend-of-the-ten-rings",
-    "timestamp": "TS",
+    "timestamp": "1:41:18",
     "conversation": [
       {
         "limerick": true
       },
       {
         "person": "Dave",
-        "quote": "QUOTE"
+        "quote": "Nice! Just a solid worksmen-like, uh, limerick."
       },
       {
         "person": "Devindra",
-        "quote": "QUOTE"
+        "quote": "Nice!"
       }
     ],
     "hints": [
-      "HINTS"
+      "Tell you what, you can have 10 guesses, one for each ring.",
+      "The best of the MCU is when they play in other genres, like Hong Kong action cinema in this case.",
+      "The best, albeit most obvious, decision Disney made was getting Michelle Yeoh in this movie."
     ],
     "limerick": [
-      "LIMERICKLINES"
+      "A great new character debut",
+      "And a star-turn for Simu Liu",
+      "Charm on the screen",
+      "Combined with fight scenes",
+      "That are the best in the"
     ],
     "answers": {
       "movie": [
         "Shang-Chi and the Legend of the Ten Rings",
         "Shang-Chi and the Ten Rings",
+        "Shang-Chi and the Legend of the 10 Rings",
         "Shang-Chi"
       ],
-      "end": "ANSWER"
+      "end": "MCU"
     }
   },
   {
-    "incomplete": true,
-    "movie": "CODA",
-    "imdbId": "tt10366460",
-    "episodeTitle": "Ep. 633 - Pig and Coda (GUEST: Walter Chaw from Film Freak Central)",
-    "audioboom": "https://audioboom.com/posts/7928259-ep-633-pig-and-coda-guest-walter-chaw-from-film-freak-central",
-    "timestamp": "TS",
-    "conversation": [
-      {
-        "limerick": true
-      },
-      {
-        "person": "Dave",
-        "quote": "QUOTE"
-      },
-      {
-        "person": "Devindra",
-        "quote": "QUOTE"
-      }
-    ],
-    "hints": [
-      "HINTS"
-    ],
-    "limerick": [
-      "LIMERICKLINES"
-    ],
-    "answers": {
-      "movie": "Coda",
-      "end": "ANSWER"
-    }
-  },
-  {
-    "incomplete": true,
     "movie": "Pig",
     "imdbId": "tt11003218",
     "episodeTitle": "Ep. 633 - Pig and Coda (GUEST: Walter Chaw from Film Freak Central)",
     "audioboom": "https://audioboom.com/posts/7928259-ep-633-pig-and-coda-guest-walter-chaw-from-film-freak-central",
-    "timestamp": "TS",
+    "timestamp": "0:36:24",
     "conversation": [
       {
         "limerick": true
       },
       {
         "person": "Dave",
-        "quote": "QUOTE"
+        "quote": "Hmmm, interesting. That was pretty good. Also, I gotta say Jeff I kinda expected you to hate this movie."
       },
       {
         "person": "Devindra",
-        "quote": "QUOTE"
+        "quote": "Aaahhh..."
       }
     ],
     "hints": [
-      "HINTS"
+      "A film that is hard to define",
+      "Vague and ponderous by design",
+      "It proved effective",
+      "And made me reflective",
+      "When I transposed something else in for"
     ],
     "limerick": [
-      "LIMERICKLINES"
+      "You may need some help rooting around, foraging for the answer to this one.",
+      "Who says dogs are a man’s best friend (besides John Wick)? This movie lets another four-legged friend hog the spotlight and motivate our protagonist.",
+      "Nicholas Cage is perfectly cast as a grizzled woodsman on a “Taken-style” mission to rescue the love of his life."
     ],
     "answers": {
       "movie": "Pig",
-      "end": "ANSWER"
+      "end": "swine"
     }
   },
   {
-    "incomplete": true,
     "movie": "The Suicide Squad",
     "imdbId": "tt6334354",
     "episodeTitle": "Ep. 632 - The Suicide Squad (GUEST: Frank Barbiere, author of Astonishing Times)",
     "audioboom": "https://audioboom.com/posts/7925008-ep-632-the-suicide-squad-guest-frank-barbiere-author-of-astonishing-times",
-    "timestamp": "TS",
+    "timestamp": "1:00:44",
     "conversation": [
       {
         "limerick": true
       },
       {
         "person": "Dave",
-        "quote": "QUOTE"
+        "quote": "Nice! Really solid execution on that one. Well done."
       },
       {
         "person": "Devindra",
-        "quote": "QUOTE"
+        "quote": "Ooooh. Very good tempo there."
+      },
+      {
+        "person": "Frank Barbiere",
+        "quote": "Very nice!"
       }
     ],
     "hints": [
-      "HINTS"
+      "Is it a sequel title by just adding “The” to the title of the first one?",
+      "What’s clear is adding the “The” makes all the difference in making this movie decent compared to the trash fire that was the first version.",
+      "The DCU should try it will their other films, maybe: The Justice League, The Batman v Superman, or The Black Adam."
     ],
     "limerick": [
-      "LIMERICKLINES"
+      "The 2016 film’s the worst",
+      "But somehow that course was reversed",
+      "This sets a new bar",
+      "For how much and how far",
+      "A sequel can outshine the"
     ],
     "answers": {
-      "movie": [
-        "The Suicide Squad"
-      ],
-      "end": "ANSWER"
+      "movie": "The Suicide Squad",
+      "end": "first"
     }
   },
   {
-    "incomplete": true,
-    "movie": "The Green Knight",
-    "imdbId": "tt9243804",
-    "episodeTitle": "Ep. 631 - The Green Knight (GUEST: Alisha Grauso from ScreenRant)",
-    "audioboom": "https://audioboom.com/posts/7921714-ep-631-the-green-knight-guest-alisha-grauso-from-screenrant",
-    "timestamp": "TS",
-    "conversation": [
-      {
-        "limerick": true
-      },
-      {
-        "person": "Dave",
-        "quote": "QUOTE"
-      },
-      {
-        "person": "Devindra",
-        "quote": "QUOTE"
-      }
-    ],
-    "hints": [
-      "HINTS"
-    ],
-    "limerick": [
-      "LIMERICKLINES"
-    ],
-    "answers": {
-      "movie": [
-        "The Green Knight",
-        "Green Knight"
-      ],
-      "end": "ANSWER"
-    }
-  },
-  {
-    "incomplete": true,
     "movie": "Jungle Cruise",
     "imdbId": "tt0870154",
     "episodeTitle": "Ep. 630 - Jungle Cruise (GUEST: Peter Sciretta from Slashfilm and Ordinary Adventures)",
     "audioboom": "https://audioboom.com/posts/7917249-ep-630-jungle-cruise-guest-peter-sciretta-from-slashfilm-and-ordinary-adventures",
-    "timestamp": "TS",
+    "timestamp": "1:32:16",
     "conversation": [
       {
         "limerick": true
       },
       {
         "person": "Dave",
-        "quote": "QUOTE"
-      },
-      {
-        "person": "Devindra",
-        "quote": "QUOTE"
+        "quote": "Mmm, hmmm."
       }
     ],
     "hints": [
-      "HINTS"
+      "It’s another Disney ride as movie, and as Jeff says, kinda the same as the other one.",
+      "Somehow the special effects are worse than the ride that’s as old as Disney World itself.",
+      "Sure felt like the actors and crew had this production on cruise control and lost along the way."
     ],
     "limerick": [
-      "LIMERICKLINES"
+      "I have no doubt that this technique will",
+      "Make Disney’s balance sheets equal",
+      "The costs will defray",
+      "Cause not in a good way",
+      "It feels like the lost Pirates"
     ],
     "answers": {
       "movie": "Jungle Cruise",
-      "end": "ANSWER"
+      "end": "sequel"
     }
   },
   {
-    "incomplete": true,
     "movie": "Old",
     "imdbId": "tt10954652",
     "episodeTitle": "Ep. 629 - Old (GUEST: Walter Chaw from Film Freak Central)",
     "audioboom": "https://audioboom.com/posts/7912338-ep-629-old-guest-walter-chaw-from-film-freak-central",
-    "timestamp": "TS",
+    "timestamp": "1:37:30",
     "conversation": [
       {
         "limerick": true
       },
       {
         "person": "Dave",
-        "quote": "QUOTE"
+        "quote": "Hahaha, nice!"
       },
       {
         "person": "Devindra",
-        "quote": "QUOTE"
+        "quote": "Haha. But what if you got old really quickly?!"
       }
     ],
     "hints": [
-      "HINTS"
+      "It’s how you might describe this game after playing several rounds.",
+      "The premise is not new.",
+      "A rare instance where the final word is the same as the movie title."
     ],
     "limerick": [
-      "LIMERICKLINES"
+      "I love how M. Night’s films unfold",
+      "But the message here’s not really bold",
+      "Ask anyone alive",
+      "Over thirty-five",
+      "They’ll tell you it sucks getting"
     ],
     "answers": {
       "movie": "Old",
-      "end": "ANSWER"
+      "end": "old"
     }
   },
   {
-    "incomplete": true,
     "movie": "A Quiet Place Part II",
     "imdbId": "tt8332922",
     "episodeTitle": "Ep. 628 - A Quiet Place Part II",
     "audioboom": "https://audioboom.com/posts/7908520-ep-628-a-quiet-place-part-ii",
-    "timestamp": "TS",
+    "timestamp": "1:23:35",
     "conversation": [
       {
         "limerick": true
       },
       {
         "person": "Dave",
-        "quote": "QUOTE"
+        "quote": "Mmmm, nicely done."
       },
       {
         "person": "Devindra",
-        "quote": "QUOTE"
+        "quote": "Absolutely. Even Last of Us-style monsters at this point."
       }
     ],
     "hints": [
-      "HINTS"
+      "Like the comparison in the limerick, this also comes in two parts.",
+      "Look to Devindra for help here.",
+      "I’d like to see Clickers try to survive in the world of this movie."
     ],
     "limerick": [
-      "LIMERICKLINES"
+      "There’s young children in danger and thus",
+      "I found it a bit torturous",
+      "But the tension’s well done",
+      "And the action is fun",
+      "Like a live-action filmed Last of"
     ],
     "answers": {
       "movie": [
@@ -1599,96 +1663,107 @@
         "A Quiet Place Part 2",
         "A Quiet Place 2"
       ],
-      "end": "ANSWER"
+      "end": "Us"
     }
   },
   {
-    "incomplete": true,
     "movie": "Black Widow",
     "imdbId": "tt3480822",
     "episodeTitle": "Ep. 627 - Black Widow (GUEST: Lindsey Romain)",
     "audioboom": "https://audioboom.com/posts/7904011-ep-627-black-widow-guest-lindsey-romain",
-    "timestamp": "TS",
+    "timestamp": "1:30:15",
     "conversation": [
       {
         "limerick": true
       },
       {
         "person": "Dave",
-        "quote": "QUOTE"
-      },
-      {
-        "person": "Devindra",
-        "quote": "QUOTE"
+        "quote": "Interesting, intriguing. That asks a question Jeff, which is ‘how was it different?’"
       }
     ],
     "hints": [
-      "HINTS"
+      "You can blame (or thank) the pandemic for being having to (or being able to) watch this Marvel blockbuster at home on release.",
+      "That problem/opportunity is what led to contract disputes between Disney and Scar Jo.",
+      "Scar Jo is the lead, but Florence Pugh was the star."
     ],
     "limerick": [
-      "LIMERICKLINES"
+      "Though I didn’t see it projected",
+      "It’s so funny and well-directed",
+      "I was thoroughly engrossed",
+      "And what I like most",
+      "Is it’s different than what I"
     ],
     "answers": {
       "movie": "Black Widow",
-      "end": "ANSWER"
+      "end": "expected"
     }
   },
   {
-    "incomplete": true,
     "movie": "No Sudden Move",
     "imdbId": "tt11525644",
     "episodeTitle": "Ep. 626 - No Sudden Move",
     "audioboom": "https://audioboom.com/posts/7899961-ep-626-no-sudden-move",
-    "timestamp": "TS",
+    "timestamp": "1:09:10",
     "conversation": [
       {
         "limerick": true
       },
       {
         "person": "Dave",
-        "quote": "QUOTE"
+        "quote": "Hahaha, nice rhyming audacity with capacity. That’s very good Jeff. Nicely done."
       },
       {
         "person": "Devindra",
-        "quote": "QUOTE"
+        "quote": "Yeah, quite a lens!. Love it, love it."
       }
     ],
     "hints": [
-      "HINTS"
+      "Devindra with the assist here.",
+      "Kind of a mixed review for a Steven Soderburgh entry.",
+      "Del Toro and Cheadle and Harbour are electric on screen, while choosing their moves very deliberately."
     ],
     "limerick": [
-      "LIMERICKLINES"
+      "Though I’m perplexed on how it ends",
+      "The movie itself transcends",
+      "In every capacity",
+      "And what audacity",
+      "To shoot the whole thing with that"
     ],
     "answers": {
       "movie": "No Sudden Move",
-      "end": "ANSWER"
+      "end": "lens"
     }
   },
   {
-    "incomplete": true,
     "movie": "F9: The Fast Saga",
     "imdbId": "tt5433138",
     "episodeTitle": "Ep. 625 - F9: The Fast Saga (GUEST: Dave Schilling from Galaxy Brains)",
     "audioboom": "https://audioboom.com/posts/7895381-ep-625-f9-the-fast-saga-guest-dave-schilling-from-galaxy-brains",
-    "timestamp": "TS",
+    "timestamp": "1:01:46",
     "conversation": [
       {
         "limerick": true
       },
       {
         "person": "Dave",
-        "quote": "QUOTE"
+        "quote": "Alright. That’s pretty harsh, Jeff, pretty harsh. But you know, I saw it comin’. I saw it comin’."
       },
       {
         "person": "Devindra",
-        "quote": "QUOTE"
+        "quote": "Pretty, pretty harsh. I think we all know Jeff is not a true believer."
       }
     ],
     "hints": [
-      "HINTS"
+      "The only thing constant in this franchise’s naming convention is the letter “F”. (Which also happens to be the grade Jeff gave this entry).”",
+      "If they missed a trick with “F8 of the Furious” then maybe this one can be read as “Fine”?",
+      "I’d call using saga in the title of a single film out of a soon-to-be 10-movie franchise dumb too."
     ],
     "limerick": [
-      "LIMERICKLINES"
+      "There is some fun to be had, I said some",
+      "But what have these movies become",
+      "You’ll give them a pass",
+      "But they’re up their own ass",
+      "This one isn’t good, it’s just"
     ],
     "answers": {
       "movie": [
@@ -1697,137 +1772,144 @@
         "The Fast Saga",
         "Fast Saga"
       ],
-      "end": "ANSWER"
+      "end": "dumb"
     }
   },
   {
-    "incomplete": true,
     "movie": "Luca",
-    "imdbId": "IMDB",
+    "imdbId": "tt12801262",
     "episodeTitle": "Ep. 624 - Luca (GUEST: Hoai-Tran Bui from Slashfilm)",
     "audioboom": "https://audioboom.com/posts/7891467-ep-624-luca-guest-hoai-tran-bui-from-slashfilm",
-    "timestamp": "TS",
+    "timestamp": "1:32:52",
     "conversation": [
       {
         "limerick": true
       },
       {
         "person": "Dave",
-        "quote": "QUOTE"
-      },
-      {
-        "person": "Devindra",
-        "quote": "QUOTE"
+        "quote": "Nice!"
       }
     ],
     "hints": [
-      "HINTS"
+      "Jeff gives it away in this one.",
+      "Can you guess the bizarre, strange, and peculiar last word?",
+      "It’s abnormal, odd, and some might say eccentric."
     ],
     "limerick": [
-      "LIMERICKLINES"
+      "For years Pixar films were revered",
+      "Has that reputation disappeared",
+      "If you think I’d say",
+      "Watch Luca today",
+      "It’s boldly, delightfully"
     ],
     "answers": {
       "movie": "Luca",
-      "end": "ANSWER"
+      "end": "weird"
     }
   },
   {
-    "incomplete": true,
     "movie": "In The Heights",
     "imdbId": "tt1321510",
     "episodeTitle": "Ep. 623 - In The Heights (GUEST: Carlos Aguilar)",
     "audioboom": "https://audioboom.com/posts/7886889-ep-623-in-the-heights-guest-carlos-aguilar",
-    "timestamp": "TS",
+    "timestamp": "1:26:55",
     "conversation": [
       {
         "limerick": true
       },
       {
         "person": "Dave",
-        "quote": "QUOTE"
-      },
-      {
-        "person": "Devindra",
-        "quote": "QUOTE"
+        "quote": "Hmmm. Talking about the length of the movie, ok."
       }
     ],
     "hints": [
-      "HINTS"
+      "We have been living in Lin Manuel’s world since Hamilton.",
+      "And this film, an adaptation of his first major project, is most closely representing his world.",
+      "Based on Jeff’s review, we might call it In the Lengths."
     ],
     "limerick": [
-      "LIMERICKLINES"
+      "Full of vibrant and joyous songs",
+      "It doesn’t do anything wrong",
+      "The tale is intriguing",
+      "But I found it fatiguing",
+      "Because it’s two-and-a-half hours"
     ],
     "answers": {
       "movie": "In The Heights",
-      "end": "ANSWER"
+      "end": "long"
     }
   },
   {
-    "incomplete": true,
     "movie": "Wrath of Man",
     "imdbId": "tt11083552",
     "episodeTitle": "Ep. 622 - Wrath of Man",
     "audioboom": "https://audioboom.com/posts/7883725-ep-622-wrath-of-man",
-    "timestamp": "TS",
+    "timestamp": "1:20:38",
     "conversation": [
       {
         "limerick": true
       },
       {
         "person": "Dave",
-        "quote": "QUOTE"
+        "quote": "Haha, I thought you were going to say drool at the end."
       },
       {
         "person": "Devindra",
-        "quote": "QUOTE"
+        "quote": "Cool."
       }
     ],
     "hints": [
-      "HINTS"
+      "Dave rules out one possibility for the final word. But Devindra liked it and gives away the game with his response.",
+      "Here’s a clue for the title, what was the final deadly sin revealed in Se7en?",
+      "Jason Statham is Guy Ritchie’s Man in this and Snatch."
     ],
     "limerick": [
-      "LIMERICKLINES"
+      "Can more interesting parts overrule",
+      "What’s deserving of ridicule",
+      "The structure is baffling",
+      "I started out laughing",
+      "But by the end I thought the movie was"
     ],
     "answers": {
       "movie": "Wrath of Man",
-      "end": "ANSWER"
+      "end": "cool"
     }
   },
   {
-    "incomplete": true,
     "movie": "Riders of Justice",
     "imdbId": "tt11655202",
     "episodeTitle": "Ep. 621 - Riders of Justice (GUEST: Scott Wampler from The Kingcast)",
     "audioboom": "https://audioboom.com/posts/7879167-ep-621-riders-of-justice-guest-scott-wampler-from-the-kingcast",
-    "timestamp": "TS",
+    "timestamp": "1:22:23",
     "conversation": [
       {
         "limerick": true
       },
       {
         "person": "Dave",
-        "quote": "QUOTE"
-      },
-      {
-        "person": "Devindra",
-        "quote": "QUOTE"
+        "quote": "Wow! Very good. Rhyming ‘reliable’, very difficult Jeff and you pulled it off. Nicely done."
       }
     ],
     "hints": [
-      "HINTS"
+      "Jeff’s ability to deliver a well-crafted limerick is undeniable and most everyone would agree, reliable.",
+      "Mads Mikkelsen can be relied on to deliver an intense thrill ride, justifiably threatening and imposing.",
+      "I’m sure the creative team here has done other things, but I’m interested in them as Writers of Just This to help solve the title of this film."
     ],
     "limerick": [
-      "LIMERICKLINES"
+      "It seems at first undeniable",
+      "That this film’s quickly classifiable",
+      "A revenge fantasy",
+      "But what it turns out to be",
+      "Is how judgment becomes"
     ],
     "answers": {
       "movie": [
         "Riders of Justice"
       ],
-      "end": "ANSWER"
+      "end": "unreliable"
     }
   },
   {
-    "incomplete": true,
     "movie": "Concrete Cowboy",
     "imdbId": "tt8846176",
     "episodeTitle": "Ep. 614 - Concrete Cowboy",
@@ -1839,11 +1921,13 @@
       },
       {
         "person": "Dave",
-        "quote": "Nice! That’s a fun, delightful one. It’s a light…it’s like a…it’s an amoo"
+        "quote": "Hmmm, why do you say that Jeff? Why do you want a documentary instead of what we have here?"
       }
     ],
     "hints": [
-      "HINTS"
+      "Dave can help you out with the final word.",
+      "Alluring alliteration describes this Idris Elba movie’s masthead.",
+      "The true history of Black cowboys in cities is likely even more interesting than this film’s fiction."
     ],
     "limerick": [
       "Urban cowboys in this century",
@@ -1858,36 +1942,43 @@
     }
   },
   {
-    "incomplete": true,
     "movie": "Army of the Dead",
     "imdbId": "tt0993840",
     "episodeTitle": "Ep. 620 - Army of the Dead (GUEST: Ariel Fisher)",
     "audioboom": "https://audioboom.com/posts/7873669-ep-620-army-of-the-dead-guest-ariel-fisher",
-    "timestamp": "TS",
+    "timestamp": "1:25:46",
     "conversation": [
       {
         "limerick": true
       },
       {
         "person": "Dave",
-        "quote": "QUOTE"
+        "quote": "Hahahaha! Wow kind of a spoilery limerick there Jeff."
       },
       {
         "person": "Devindra",
-        "quote": "QUOTE"
+        "quote": "Haha!"
+      },
+      {
+        "person": "Ariel Fisher",
+        "quote": "Hahaha! Bravo."
       }
     ],
     "hints": [
-      "HINTS"
+      "I love Dave Bautista on screen but this Zack Snyder take on zombies is not great.",
+      "Bold idea for our characters to run a heist during a zombie apocalypse.",
+      "The zombies might be the army, but this movie asks, “Maybe we are the ones who are really dead, at least dead inside?”"
     ],
     "limerick": [
-      "LIMERICKLINES"
+      "This movie needs to get rid of",
+      "A half hour of lore that they shove",
+      "Into the plot",
+      "I surely did not",
+      "Need to know that now zombies can"
     ],
     "answers": {
-      "movie": [
-        "ANSWER"
-      ],
-      "end": "ANSWER"
+      "movie": "Army of the Dead",
+      "end": "love"
     }
   },
   {
@@ -1933,7 +2024,7 @@
     "imdbId": "tt10872600",
     "episodeTitle": "Ep. 649 - Spider-Man: No Way Home (GUEST: Dan Gvozden from The Amazing Spider-Talk)",
     "audioboom": "https://audioboom.com/posts/7999151-ep-649-spider-man-no-way-home-guest-dan-gvozden-from-the-amazing-spider-talk",
-    "timestamp": "52:36",
+    "timestamp": "0:52:36",
     "conversation": [
       {
         "limerick": true
@@ -2375,7 +2466,7 @@
     "imdbId": "tt1745960",
     "episodeTitle": "Ep. 672 - Top Gun: Maverick (GUEST: Germain Lussier from io9)",
     "audioboom": "https://audioboom.com/posts/8091552-ep-672-top-gun-maverick-guest-germain-lussier-from-io9",
-    "timestamp": "16:43",
+    "timestamp": "0:16:43",
     "conversation": [
       {
         "limerick": true
@@ -2570,7 +2661,7 @@
     "imdbId": "tt15090124",
     "episodeTitle": "Ep. 677 - Mad God",
     "audioboom": "https://audioboom.com/posts/8113785-ep-677-mad-god",
-    "timestamp": "31:24",
+    "timestamp": "0:31:24",
     "conversation": [
       {
         "limerick": true
@@ -2931,7 +3022,8 @@
     ],
     "answers": {
       "movie": [
-        "Don’t Worry Darling"
+        "Don’t Worry Darling",
+        "Don't Worry Darling"
       ],
       "end": "ending"
     }
@@ -3047,7 +3139,7 @@
     "imdbId": "tt1630029",
     "episodeTitle": "Ep. 700 - Avatar: The Way of Water",
     "audioboom": "https://audioboom.com/posts/8214728-ep-700-avatar-the-way-of-water",
-    "timestamp": "34:37",
+    "timestamp": "0:34:37",
     "conversation": [
       {
         "limerick": true
@@ -3384,7 +3476,7 @@
     }
   },
   {
-    "movie": "Magi Mike’s Last Dance",
+    "movie": "Magic Mike’s Last Dance",
     "imdbId": "tt16280138",
     "episodeTitle": "Ep. 709 - Magic Mike's Last Dance (GUEST: Jordan Crucchiola)",
     "audioboom": "https://audioboom.com/posts/8246787-ep-709-magic-mike-s-last-dance-guest-jordan-crucchiola",
@@ -3413,6 +3505,7 @@
     "answers": {
       "movie": [
         "Magic Mike’s Last Dance",
+        "Magic Mike's Last Dance",
         "Magic Mike Last Dance",
         "Magic Mikes Last Dance"
       ],

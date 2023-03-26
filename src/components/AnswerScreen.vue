@@ -22,7 +22,7 @@
 		</header>
 		<div v-if="currentQuestion.omdb" class="sm:flex pb-8">
 			<div
-			  class="mx-auto sm:m-0 w-3/4 sm:w-2/5 md:w-1/3 lg:w-1/4 overflow-hidden">
+			  class="mx-auto sm:m-0 w-full sm:w-2/5 md:w-1/3 lg:w-1/4 overflow-hidden">
 				<div class="group rounded-xl group">
 					<img v-if="!showEmbed" class="h-auto w-full rounded-tr-lg rounded-tl-lg"
 					     :src="currentQuestion.omdb.Poster"
@@ -81,8 +81,8 @@
 					</p>
 					<div class="mt-12">
 
-						<div class="inline-block py-2 px-4 text-sky-700 bg-sky-200 hover:text-sky-800 hover:bg-sky-100 rounded-lg">
-							<div v-on:click="showEmbed = true"
+						<div class="block sm:inline-block py-2 px-4 text-sky-700 bg-sky-200 hover:text-sky-800 hover:bg-sky-100 rounded-lg">
+							<div v-on:click="showTheEmbed"
 							     class="flex items-center cursor-pointer space-x-3">
 								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
 								     stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
@@ -124,7 +124,7 @@
 						<div class="mt-12">
 							<a href="#"
 							   v-on:click.prevent="nextQuestion"
-							   class="inline-flex rounded-md bg-sky-600 px-3.5 py-3 text-lg font-semibold text-white shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Next</a>
+							   class="block sm:inline-flex text-center rounded-md bg-sky-600 px-3.5 py-3 text-lg font-semibold text-white shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Next</a>
 						</div>
 					</div>
 
@@ -164,6 +164,10 @@ export default {
 		},
 		nextQuestion() {
 			this.$emit('set-rand-question')
+		},
+		showTheEmbed() {
+			this.showEmbed = true
+			window.scrollTo(0, 0);
 		}
 	},
 	computed: {

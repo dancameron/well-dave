@@ -1,8 +1,8 @@
 <template>
-	<nav class="invisible sm:visible fixed bottom-0 left-0 w-full py-4 rounded-xs bg-gray-50 border border-gray-100" aria-label="Footer">
+	<nav class="md:fixed z-50 bottom-0 left-0 w-full py-2 px-4 rounded-xs bg-gray-50 border border-gray-100" aria-label="Footer">
 		<div class="max-w-7xl mx-4 sm:mx-auto sm:flex justify-between gap-4">
 
-			<div class="flex items-center mb-4 sm:mb-0">
+			<div class="block sm:flex items-center mb-1 sm:mb-0">
 				<p class="text-center text-xs leading-5 text-gray-400">&copy; 2023 <a target="_blank"
 				                                                                      href="http://thefilmcast.com">The Film Cast</a>. All rights reserved.</p>
 			</div>
