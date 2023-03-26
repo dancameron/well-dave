@@ -13,6 +13,6 @@ A little limerick game for movie fans.
 * Giving a positive review and rating in your podcast directory.
 
 ## Well Dave Credits
-Created by [Kevin Taylor](https://twitter.com)
+Created by Kevin Taylor
 
-Designed and Developed by [Dan Cameron](https://twitter.com/dancameron) 
+Designed and Developed by [Dan Cameron](https://twitter.com/dancameron) of [Sprout Venture](https://sproutventure.com)
