@@ -6,8 +6,8 @@ import AnswerScreen from "./components/AnswerScreen.vue";
 import Stats from "./components/Stats.vue";
 import FooterLinks from "./components/FooterLinks.vue";
 import BonusLimerick from "./components/BonusLimericks.vue";
-import FooterNav from "./FooterNav.vue";
-import NewHere from "./NewHere.vue";</script>
+import FooterNav from "./components/FooterNav.vue";
+import NewHere from "./components/NewHere.vue";</script>
 
 <template>
 	<div class="font-sans" :class="{'bg-sky-900 bg-gradient-to-t via-sky-900 from-black': answeredOrSkipped}">
@@ -108,6 +108,7 @@ export default {
 		}
 
 		// TODO This sorts the movies but is really not necessary when live
+		// for the footer nav though?
 		this.questions.sort(function (a, b) {
 			if (a.episodeTitle > b.episodeTitle) {
 				return -1;
@@ -161,7 +162,7 @@ export default {
 		setRandQuestion() {
 
 			// check if answered a set yet
-			if (this.setTotal <= this.limericksAttempted.length) {
+			if (this.setTotal === this.limericksAttempted.length) {
 				this.finished = true
 				window.scrollTo(0, 0);
 				this.setCache()

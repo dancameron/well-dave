@@ -41,6 +41,15 @@
       "If you know going in",
       "That none of this bullshit makes"
     ],
+    "bonusLimericks": [
+      [
+        "If you want to see monsters get wrecked",
+        "With cutting edge visual effects",
+        "Just cut out the shots",
+        "Where the humans talk",
+        "And the half-an-hour left is perfect."
+      ]
+    ],
     "answers": {
       "movie": [
         "Godzilla vs. Kong",
@@ -1501,14 +1510,14 @@
         "quote": "Aaahhh..."
       }
     ],
-    "hints": [
+    "limerick": [
       "A film that is hard to define",
       "Vague and ponderous by design",
       "It proved effective",
       "And made me reflective",
       "When I transposed something else in for"
     ],
-    "limerick": [
+    "hints": [
       "You may need some help rooting around, foraging for the answer to this one.",
       "Who says dogs are a man’s best friend (besides John Wick)? This movie lets another four-legged friend hog the spotlight and motivate our protagonist.",
       "Nicholas Cage is perfectly cast as a grizzled woodsman on a “Taken-style” mission to rescue the love of his life."
@@ -2891,15 +2900,15 @@
       },
       {
         "person": "Dave",
-        "quote": "You rhymed “Trachtenburg” with something Jeff! You rhymed Trachtenburg withh….that is incredible. You’re incredii…truly the Eminem of limericks here."
+        "quote": "You rhymed “Trachtenberg” with something Jeff! You rhymed Trachtenberg withh….that is incredible. You’re incredii…truly the Eminem of limericks here."
       },
       {
         "person": "Devindra",
-        "quote": "Heeeyyyyyyy!Great. Great."
+        "quote": "Heeeyyyyyyy! Great. Great."
       }
     ],
     "hints": [
-      "Dan Trachtenburg’s second feature is what you’re hunting for here.",
+      "Dan Trachtenberg’s second feature is what you’re hunting for here.",
       "Amber Midthunder is a star and I pray the rest of the world sees that.",
       "This entry predates the others in the franchise."
     ],
@@ -2914,7 +2923,7 @@
       "movie": [
         "Prey"
       ],
-      "end": "Trachtenburg"
+      "end": "Trachtenberg"
     }
   },
   {
