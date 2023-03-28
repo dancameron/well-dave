@@ -228,8 +228,6 @@ export default {
 			this.$emit('show-hint')
 		},
 		skip() {
-			this.movie = ''
-			this.end = ''
 			this.$emit('next-question')
 		},
 		giveLimerickEnd() {
