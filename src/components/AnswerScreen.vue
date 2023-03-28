@@ -93,26 +93,15 @@
 									<b v-if="!showEmbed">Click to Listen</b>
 									<b v-else>Listening...</b><br/>
 
-									<div class="flex items-center space-x-2">
-										<div class="flex items-center text-xs">
+									<div class="flex items-center space-x-2 text-xs">
+										<div>{{ currentQuestion.episodeTitle }}</div>
+										<div class="hidden md:flex text-xs">
 											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-											     stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
-												<path stroke-linecap="round" stroke-linejoin="round"
-												      d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z"/>
-											</svg>
-											<span>
-											{{ currentQuestion.episodeTitle }}
-										</span>
-										</div>
-										<div class="flex items-center text-xs">
-											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-											     stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
+											     stroke-width="1.5" stroke="currentColor" class="mt-0 mr-1 w-4 h-4">
 												<path stroke-linecap="round" stroke-linejoin="round"
 												      d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
 											</svg>
-											<span>
-										{{ currentQuestion.timestamp }}
-									</span>
+											<span>{{ currentQuestion.timestamp }}</span>
 										</div>
 									</div>
 

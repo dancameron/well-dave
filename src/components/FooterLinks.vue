@@ -1,7 +1,21 @@
 <template>
 	<footer class="bg-white/5 pb-16">
 		<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 md:flex md:items-center md:justify-between">
-			<div class="flex justify-center items-center whitespace-nowrap space-x-6 md:order-2 py-8">
+
+			<div class="flex justify-center items-center whitespace-nowrap space-x-6 md:order-2 pt-8 sm:pt-0">
+				<a
+				  href="https://www.cameo.com/jeffcannata"
+				  target="_blank"
+				  class="flex flex-inline space-x-1 items-center text-sky-400 hover:text-sky-500">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+					     stroke="currentColor" class="w-4 h-4">
+						<path stroke-linecap="round" stroke-linejoin="round"
+						      d="M21 11.25v8.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 109.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1114.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/>
+					</svg>
+					<span class="text-xs">Get Personalized Limericks</span>
+				</a>
+			</div>
+			<div class="flex justify-center items-center whitespace-nowrap space-x-6 md:order-3 py-8">
 
 				<a
 				  href="https://forms.gle/wRV5Cw1Y2qeVoTALA"
@@ -38,7 +52,6 @@
 				</a>
 
 			</div>
-
 			<div class="flex justify-center items-center whitespace-nowrap space-x-6 md:order-1">
 				<a href="https://audioboom.com/channels/4997224-the-filmcast-aka-the-slashfilmcast" target="_blank"
 				   class="flex flex-inline space-x-1 items-center text-gray-400 hover:text-gray-500">
