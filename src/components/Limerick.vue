@@ -143,7 +143,7 @@
 
 						<ul class="mt-2 text-sm text-gray-500 flex flex-col mx-auto divide-y divide-dashed">
 							<li v-for="(hint, index) in currentQuestion.hints"
-							    class="py-2 flex items-baseline space-x-3 cursor-zoom-in">
+							    class="py-2 flex items-baseline space-x-3 cursor-zoom-in" :class="{'pr-9': index === currentQuestion.hints.length-1}">
 
 									<span class="select-none"
 									      :class="{'font-sans': index <= currentQuestion.hintsNeeded-1, 'text-gray-200 font-block': index > currentQuestion.hintsNeeded-1 }">{{
