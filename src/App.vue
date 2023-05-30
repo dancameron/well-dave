@@ -86,7 +86,7 @@ export default {
 			currentQuestionId: false,
 			cacheKey: 'wellDaveEp.711.c', // sigh, I didn't consider progress being saved, so this is a perma-key
 			inputs: {movie: '', end: ''},
-			version: '613-711',
+			version: '613-714',
 		}
 	},
 	mounted() {

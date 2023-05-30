@@ -219,7 +219,7 @@ export default {
 	methods: {
 		limerickLine(line) {
 			let movie = this.currentQuestion.movie.toLowerCase();
-			return line.toLowerCase().replace(movie, '<span class="group"><span class="hidden group-hover:inline">' + movie + '</span><span class="inline group-hover:hidden text-sky-500 border-sky-300 border-dashed">[Spoiler]</span></span>')
+			return line.toLowerCase().replace(movie, '<span class="group"><span class="font-block text-gray-400">' + movie + '</span></span>')
 		},
 		answerLimerick() {
 			this.$emit('answer-limerick', {movie: this.movie.trim(), end: this.end.trim()})

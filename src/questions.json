@@ -3598,5 +3598,119 @@
       ],
       "end": "cocaine"
     }
+  },
+  {
+    "movie": "Creed III",
+    "imdbId": "tt11145118",
+    "episodeTitle": "Ep. 713 - Scream VI (GUEST: Ariel Fisher)",
+    "audioboom": "https://audioboom.com/posts/8263230-ep-713-scream-vi-guest-ariel-fisher",
+    "timestamp": "1:11:42",
+    "conversation": [
+      {
+        "limerick": true
+      },
+      {
+        "person": "Dave",
+        "quote": "Hmmm."
+      }
+    ],
+    "hints": [
+      "Will this franchise outnumber its source franchise?",
+      "Jeff’s review was that this movie should have been parts 3 and 4 so that would have helped.",
+      "Michael B. Jordan’s anime inspiration was all over the fight scenes."
+    ],
+    "limerick": [
+      "For every punch that it threw",
+      "There’s so much it needed to do",
+      "I still liked it a lot",
+      "But in terms of the plot",
+      "It bit off more than it could"
+    ],
+    "answers": {
+      "movie": [
+        "Creed III",
+        "Creed 3"
+      ],
+      "end": "chew"
+    }
+  },
+  {
+    "movie": "Scream VI",
+    "imdbId": "tt17663992",
+    "episodeTitle": "Ep. 713 - Scream VI (GUEST: Ariel Fisher)",
+    "audioboom": "https://audioboom.com/posts/8263230-ep-713-scream-vi-guest-ariel-fisher",
+    "timestamp": "59:02",
+    "conversation": [
+      {
+        "limerick": true
+      },
+      {
+        "person": "Dave",
+        "quote": "Ahhhaha! Interesting!"
+      },
+      {
+        "person": "Devindra",
+        "quote": "Ahhh, nice!"
+      }
+    ],
+    "hints": [
+      "This sixth installment goes places, specifically Montreal, I mean “New York City”.",
+      "Maybe head back to Woodsboro where the better movies were made.",
+      "WIthout Nev Cambell’s ‘Sydney’ is like Halloween without Jamie Lee Curtis."
+    ],
+    "limerick": [
+      "It turns out that after spending",
+      "Five movies with people pretending",
+      "To each be Ghostface",
+      "Even in a new place",
+      "It’s hard to find a good"
+    ],
+    "answers": {
+      "movie": [
+        "Scream VI",
+        "Scream 6"
+      ],
+      "end": "ending"
+    }
+  },
+  {
+    "movie": "Shazam! Fury of the Gods",
+    "imdbId": "tt10151854",
+    "episodeTitle": "Ep. 714 - Shazam! Fury of the Gods",
+    "audioboom": "https://audioboom.com/posts/8267035-ep-714-shazam-fury-of-the-gods",
+    "timestamp": "57:58",
+    "conversation": [
+      {
+        "limerick": true
+      },
+      {
+        "person": "Dave",
+        "quote": "WUUHUHUHOOOWW! JESUS!"
+      },
+      {
+        "person": "Devindra",
+        "quote": "Wow, jeez. Brutal!"
+      }
+    ],
+    "hints": [
+      "Based on this review, the subtitle of this film could be “Fury of the Jeff”.",
+      "The box office doesn’t help Zachary Levi’s battle with The Rock for the hierarchy of power in the DCU.",
+      "Maybe just me, but the number of times I have called this franchise Kazaam is not insignificant. Bring Shaq to the DCU."
+    ],
+    "limerick": [
+      "I think I like the first Shazam",
+      "But this sequel’s so bad I’m like, “Damn!”",
+      "Why did they repeat it",
+      "I’d like to delete it",
+      "The equivalent of movie"
+    ],
+    "answers": {
+      "movie": [
+        "Shazam! Fury of the Gods",
+        "Shazam Fury of the Gods",
+        "Shazam 2"
+      ],
+      "end": "spam"
+    }
   }
 ]
