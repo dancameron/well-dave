@@ -148,7 +148,7 @@ export default {
 	},
 	methods: {
 		async getOmdb() {
-			let response = await fetch("http://www.omdbapi.com/?apikey=6fa0628f&i=" + this.currentQuestion.imdbId.split('?')[0])
+			let response = await fetch("//www.omdbapi.com/?apikey=6fa0628f&i=" + this.currentQuestion.imdbId.split('?')[0])
 			this.currentQuestion.omdb = await response.json()
 		},
 		nextQuestion() {
